@@ -15,7 +15,7 @@ public class CharacterControl : MonoBehaviour
 
     }
 
-    public virtual void InputCommand()
+    public virtual void ControlCommand()
     {
 
     }

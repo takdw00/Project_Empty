@@ -42,7 +42,7 @@ public class PCharacter : Character
             //controller = npcAI;
         }
 
-        controller.InputCommand();
+        controller.ControlCommand();
 
         state.Execution();
         

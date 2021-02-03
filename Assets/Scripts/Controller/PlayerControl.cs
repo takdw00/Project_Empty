@@ -11,20 +11,21 @@ public class PlayerControl : CharacterControl
 
     //BehaviorTree for player controller
     BT_Selector playerState;
-    BT_Action_InputDirection inputDirection;
+
+    BT_Action_MOVE action_MOVE;
 
 
 
     private void Awake()
     {
         playerState = GetComponent<BT_Selector>();
-        inputDirection = GetComponent<BT_Action_InputDirection>();
+        action_MOVE = GetComponent<BT_Action_MOVE>();
 
         //player controller
-        playerState.AddChildNode(inputDirection);
+        playerState.AddChildNode(action_MOVE);
 
     }
-    public override void InputCommand()
+    public override void ControlCommand()
     {
         playerState.Run();
     }

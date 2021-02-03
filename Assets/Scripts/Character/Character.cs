@@ -24,6 +24,20 @@ public class Character : MonoBehaviour
     protected TargetSearch targetSearch;
     protected StateChanger stateChanger;
 
+    //Status enabled or not
+    public bool isStun;
+    //public bool isInput;
+    public bool isIdle;
+    public bool isReadyToAttack;
+    public bool isAvoide;
+    public bool isGuard;
+    public bool isMove;
+    public bool isAttack;
+    public bool isSkilluse_1;
+    public bool isSkilluse_2;
+    public bool isSkilluse_3;
+    public bool isSkilluse_4;
+
     //판단 변수
     public Vector3 movement;
 

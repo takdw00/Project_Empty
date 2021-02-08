@@ -5,26 +5,24 @@ using UnityEngine;
 public class PCharacter : Character
 {
     //사용클래스
-    CharacterControl controller;
-    PlayerControl playerControl;
-    NPCBehaviorTree npcAI;
-    [SerializeField] bool playerSelect;
+
+    [SerializeField] bool isCurrentSelectedCharacter;
 
     private void Awake()
     {
         //구성 클래스 연결
         c_Rigidbody2D = GetComponent<Rigidbody2D>();
-        ///Control State
-        controller = GetComponent<CharacterControl>();
-        playerControl = GetComponent<PlayerControl>();
-        npcAI = GetComponent<NPCBehaviorTree>();
 
-        ///Character State
-        state = GetComponent<State>();
-        move = GetComponent<Move>();
+        ///Control State
+        //playerControl = GetComponent<PlayerControl>();
+        //npcAI = GetComponent<NPCBehaviorTree>();
+
 
         ///스탯설정(임시)
         nowSpeed = 10;
+
+        //base state
+        SetState(GetIdleState());
     }
 
     
@@ -32,10 +30,10 @@ public class PCharacter : Character
 
     private void Update()
     {
-        if(playerSelect)
+        if(isCurrentSelectedCharacter)
         {
             //플레이어 컨트롤일시 컨트롤러 상태를 플레이어 컨트롤 상태로 바꾼다.
-            controller = playerControl;
+            controller = player_Control;
         }
         else
         {
@@ -46,5 +44,14 @@ public class PCharacter : Character
 
         state.Execution();
         
+    }
+
+    public void SetPlayerContol(PlayerControl control)
+    {
+        player_Control = control;
+    }
+    public void SetNpcAIContol(NPCBehaviorTree control)
+    {
+        npcAI_Control = control;
     }
 }

@@ -4,11 +4,10 @@ using UnityEngine;
 
 public class Move : State
 {
-    Character character;
-
     private void Awake()
     {
-        character = GetComponent<Character>();
+        character = transform.parent.GetComponent<Character>();
+        character.SetMoveState(GetComponent<Move>());
     }
     public override void Execution()
     {

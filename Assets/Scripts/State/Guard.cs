@@ -1,13 +1,13 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TargetSearch : State
+public class Guard : State
 {
     private void Awake()
     {
         character = transform.parent.GetComponent<Character>();
-        character.SetTargetSearchState(GetComponent<TargetSearch>());
+        character.SetGuardState(GetComponent<Guard>());
     }
     public override void Execution()
     {

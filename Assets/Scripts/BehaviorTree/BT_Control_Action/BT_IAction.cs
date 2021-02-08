@@ -2,8 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NPCBehaviorTree : CharacterControl
+public interface BT_IAction
 {
-
-
+    void Run();
 }

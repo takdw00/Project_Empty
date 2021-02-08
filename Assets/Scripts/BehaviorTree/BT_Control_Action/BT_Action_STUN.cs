@@ -2,12 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BT_Action_SKILL_USE : BT_Leaf
+public class BT_Action_STUN : BT_Leaf
 {
     public override bool Run()
     {
-        if (character.isSkilluse_1)
+        if (character.isStun)
         {
+            character.SetState(character.GetStunState());
             return true;
         }
         else

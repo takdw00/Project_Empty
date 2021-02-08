@@ -6,6 +6,9 @@ public class Character : MonoBehaviour
 {
     public Rigidbody2D c_Rigidbody2D;
 
+    //이름
+    private string Character_Nmae;
+
     //스탯
     protected float maxHP;
     protected float nowHP;
@@ -18,15 +21,21 @@ public class Character : MonoBehaviour
 
     //State
     protected State state;
+    protected Idle idle;
+    protected ReadyToAttack readyToAttack;
+    protected Avoide avoide;
+    protected Guard guard;
     protected Move move;
     protected Attack attack;
     protected Death death;
+    protected SkillUse skillUse;
     protected TargetSearch targetSearch;
-    protected StateChanger stateChanger;
+    protected Stun stun;
+    //protected StateChanger stateChanger;
 
     //Status enabled or not
     public bool isStun;
-    //public bool isInput;
+    public bool isInput;
     public bool isIdle;
     public bool isReadyToAttack;
     public bool isAvoide;
@@ -38,8 +47,18 @@ public class Character : MonoBehaviour
     public bool isSkilluse_3;
     public bool isSkilluse_4;
 
+    //Control
+    protected CharacterControl controller;
+    protected PlayerControl player_Control;
+    protected NPCBehaviorTree npcAI_Control;
+
     //판단 변수
     public Vector3 movement;
+
+    public string GetCharacterNmae()
+    {
+        return Character_Nmae;
+    }
 
     public Rigidbody2D GetRigidbody2D()
     {
@@ -53,7 +72,7 @@ public class Character : MonoBehaviour
 
     public void SetMovement(Vector3 vector3)
     {
-        this.movement = vector3;
+        movement = vector3;
     }
 
     public Vector3 GetMovemnet()
@@ -69,11 +88,86 @@ public class Character : MonoBehaviour
     {
         state = currentState;
     }
-    public State GetMoveState()
+
+    public Attack GetAttackState()
+    {
+        return attack;
+    }
+    public void SetAttackState(Attack state)
+    {
+        attack = state;
+    }
+    public Avoide GetAvoideState()
+    {
+        return avoide;
+    }
+    public void SetAvoideState(Avoide state)
+    {
+        avoide =state ;
+    }
+    public Death GetDeathState()
+    {
+        return death;
+    }
+    public void SetDeathState(Death state)
+    {
+         death = state;
+    }
+    public Guard GetGuardState()
+    {
+        return guard;
+    }
+    public void SetGuardState(Guard state)
+    {
+        guard= state;
+    }
+    public Idle GetIdleState()
+    {
+        return idle;
+    }
+    public void  SetIdleState(Idle state)
+    {
+         idle = state;
+    }
+    public Move GetMoveState()
     {
         return move;
     }
+    public void SetMoveState(Move state)
+    {
+         move = state;
+    }
+    public ReadyToAttack GetReadyToAttackState()
+    {
+        return readyToAttack;
+    }
+    public void SetReadyToAttackState(ReadyToAttack state)
+    {
+         readyToAttack= state;
+    }
+    public SkillUse GetSkillUseState()
+    {
+        return skillUse;
+    }
+    public void  SetSkillUseState(SkillUse state)
+    {
+         skillUse= state;
+    }
+    public Stun GetStunState()
+    {
+        return stun;
+    }
+    public void SetStunState(Stun state)
+    {
+        stun = state;
+    }
 
-
-
+    public TargetSearch GetTargetSearchState()
+    {
+        return targetSearch;
+    }
+    public void  SetTargetSearchState(TargetSearch state)
+    {
+         targetSearch= state;
+    }
 }

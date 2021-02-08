@@ -25,8 +25,12 @@ Leaf 노드는 Parameter로 정의할 수 있다.
 //추후 Leaf 클래스를 상속 받는 클래스는 액션 노드로써 어떤 행동에 대한 Run을 구현해야한다.
 public abstract class BT_Leaf : BT_Node
 {
+    protected Character character;
 
+    private void Awake()
+    {
+        character = transform.parent.transform.parent.GetComponent<Character>();
+    }
     //자식노드에 다른 노드를 연결할 필요가 없으니 접근할 필요도 없음.
-    //protected BT_Node GetChildNode() { return childNode; }
 
 }

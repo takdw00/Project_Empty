@@ -18,7 +18,7 @@ public class InputManager : MonoBehaviour
 
     enum keyName
     {
-        Avoide = 0,
+        Dodge = 0,
         Guard = 1,
         Direction = 2,
         Attack = 3,
@@ -32,7 +32,7 @@ public class InputManager : MonoBehaviour
         SelectCharacter_4 = 11,
     }
 
-    [SerializeField]Character character; // Input Manager을 사용할 캐릭터 스크립트에서 이 변수를 변경해준다.
+    [SerializeField]CharacterManager characterManager; // Input Manager을 사용할 캐릭터 스크립트에서 이 변수를 변경해준다. 이후 수정 필요할듯.
 
 
     Dictionary<KeyCode, keyName> keyDictionary;
@@ -61,7 +61,7 @@ public class InputManager : MonoBehaviour
                 {KeyCode.RightArrow, keyName.Direction},
                 {KeyCode.UpArrow, keyName.Direction},
                 {KeyCode.DownArrow, keyName.Direction},
-                {KeyCode.Space, keyName.Avoide},
+                {KeyCode.Space, keyName.Dodge},
                 {KeyCode.D, keyName.Guard},
                 {KeyCode.A, keyName.Attack},
                 {KeyCode.Q, keyName.SkillUse_1},
@@ -76,7 +76,7 @@ public class InputManager : MonoBehaviour
 
     }
 
-    void InputCommand()
+    public void InputCommand()
     {
         if (Input.anyKey)
         {
@@ -93,8 +93,8 @@ public class InputManager : MonoBehaviour
                         //대기 상태를 취소한다.
                         //가드를 취소한다.
                         //이동을 취소한다.
-                        case keyName.Avoide:
-                            ButtonEvent_Avoide();
+                        case keyName.Dodge:
+                            ButtonEvent_Dodge();
                             break;
 
                         //공격
@@ -196,7 +196,7 @@ public class InputManager : MonoBehaviour
 
     public void ContrrollCharacter(Character PlayableCharacter)
     {
-        character = PlayableCharacter;
+        characterManager.SetCharacter(PlayableCharacter);
     }
 
     void ButtonEvent_Direction_Start()
@@ -206,14 +206,14 @@ public class InputManager : MonoBehaviour
         //대기 상태를 취소한다.
         horizontal = Input.GetAxisRaw("Horizontal");
         vertical = Input.GetAxisRaw("Vertical");
-        character.SetMovement(new Vector3(horizontal, vertical, 0).normalized);
-        character.isMove = true;
+        characterManager.GetCharacter().SetMovement(new Vector3(horizontal, vertical, 0).normalized);
+        characterManager.GetCharacter().isMove = true;
     }
     void ButtonEvent_Direction_End()
     {
-        character.isMove = false;
+        characterManager.GetCharacter().isMove = false;
     }
-    void ButtonEvent_Avoide()
+    void ButtonEvent_Dodge()
     {
         //회피
         //공격 도중에는 사용할 수 없다. (Tree에서 Dec으로 처리)
@@ -222,9 +222,9 @@ public class InputManager : MonoBehaviour
         //대기 상태를 취소한다.
         //가드를 취소한다.
         //이동을 취소한다.
-        character.isAvoide = true;
-        character.isGuard = false;
-        character.isMove = false;
+        characterManager.GetCharacter().isDodge = true;
+        characterManager.GetCharacter().isGuard = false;
+        characterManager.GetCharacter().isMove = false;
         //test
         Debug.Log("Avoide");
     }
@@ -238,7 +238,7 @@ public class InputManager : MonoBehaviour
     }
     void ButtonEvent_Guard_End()
     {
-        character.isGuard = false;
+        characterManager.GetCharacter().isGuard = false;
         //test
         Debug.Log("Guard end");
     }
@@ -252,29 +252,30 @@ public class InputManager : MonoBehaviour
         //대기 상태를 취소한다.
         //가드를 취소한다.
         //이동을 취소한다.
-        character.isAttack = true;
-        character.isGuard = false;
-        character.isMove = false;
+        characterManager.GetCharacter().isAttack = true;
+        characterManager.GetCharacter().isGuard = false;
+        characterManager.GetCharacter().isMove = false;
     }
     void ButtonEvent_SkillUse_1()
     {
-        character.isSkilluse_1 = true;
+        characterManager.GetCharacter().isSkilluse_1 = true;
     }
     void ButtonEvent_SkillUse_2()
     {
-        character.isSkilluse_2 = true;
+        characterManager.GetCharacter().isSkilluse_2 = true;
 
     }
     void ButtonEvent_SkillUse_3()
     {
-        character.isSkilluse_3 = true;
+        characterManager.GetCharacter().isSkilluse_3 = true;
     }
     void ButtonEvent_SkillUse_4()
     {
-        character.isSkilluse_4 = true;
+        characterManager.GetCharacter().isSkilluse_4 = true;
     }
     void ButtonEvent_SelectCharacter_1()
     {
+
     }
     void ButtonEvent_SelectCharacter_2()
     {

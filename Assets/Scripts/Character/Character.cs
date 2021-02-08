@@ -23,22 +23,22 @@ public class Character : MonoBehaviour
     protected State state;
     protected Idle idle;
     protected ReadyToAttack readyToAttack;
-    protected Avoide avoide;
+    protected Dodge Dodge;
     protected Guard guard;
     protected Move move;
     protected Attack attack;
     protected Death death;
     protected SkillUse skillUse;
     protected TargetSearch targetSearch;
-    protected Stun stun;
+    protected Hit hit;
     //protected StateChanger stateChanger;
 
     //Status enabled or not
-    public bool isStun;
+    public bool isHit;
     public bool isInput;
     public bool isIdle;
     public bool isReadyToAttack;
-    public bool isAvoide;
+    public bool isDodge;
     public bool isGuard;
     public bool isMove;
     public bool isAttack;
@@ -97,13 +97,13 @@ public class Character : MonoBehaviour
     {
         attack = state;
     }
-    public Avoide GetAvoideState()
+    public Dodge GetDodgeeState()
     {
-        return avoide;
+        return Dodge;
     }
-    public void SetAvoideState(Avoide state)
+    public void SetDodgeeState(Dodge state)
     {
-        avoide =state ;
+        Dodge = state;
     }
     public Death GetDeathState()
     {
@@ -153,13 +153,13 @@ public class Character : MonoBehaviour
     {
          skillUse= state;
     }
-    public Stun GetStunState()
+    public Hit GetHitState()
     {
-        return stun;
+        return hit;
     }
-    public void SetStunState(Stun state)
+    public void SetHitState(Hit state)
     {
-        stun = state;
+        hit = state;
     }
 
     public TargetSearch GetTargetSearchState()

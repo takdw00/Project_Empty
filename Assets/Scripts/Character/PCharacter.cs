@@ -11,7 +11,7 @@ public class PCharacter : Character
     private void Awake()
     {
         //구성 클래스 연결
-        c_Rigidbody2D = GetComponent<Rigidbody2D>();
+        c_Rigidbody2D = transform.parent.GetComponent<Rigidbody2D>();
 
         ///Control State
         //playerControl = GetComponent<PlayerControl>();
@@ -30,7 +30,7 @@ public class PCharacter : Character
 
     private void Update()
     {
-        if(isCurrentSelectedCharacter)
+        if(isCurrentSelectedCharacter) // 나중에 캐릭터 변경할 때만 컨트롤러 상태를 바꾸도록 코드 수정할 것.
         {
             //플레이어 컨트롤일시 컨트롤러 상태를 플레이어 컨트롤 상태로 바꾼다.
             controller = player_Control;
@@ -38,6 +38,11 @@ public class PCharacter : Character
         else
         {
             //controller = npcAI;
+        }
+
+        if(Input.anyKey)
+        {
+            isInput = true;
         }
 
         controller.ControlCommand();

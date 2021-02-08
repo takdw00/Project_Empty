@@ -2,13 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BT_Action_STUN : BT_Leaf
+public class BT_Action_HIT : BT_Leaf
 {
     public override bool Run()
     {
-        if (character.isStun)
+        if (character.isHit)
         {
-            character.SetState(character.GetStunState());
+            character.SetState(character.GetHitState());
             return true;
         }
         else

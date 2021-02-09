@@ -32,12 +32,12 @@ public class InputManager : MonoBehaviour
         SelectCharacter_4 = 11,
     }
 
-    [SerializeField]CharacterManager characterManager; // Input Manager을 사용할 캐릭터 스크립트에서 이 변수를 변경해준다. 이후 수정 필요할듯.
+    [SerializeField] CharacterManager characterManager; // Input Manager을 사용할 캐릭터 스크립트에서 이 변수를 변경해준다. 이후 수정 필요할듯.
 
 
     Dictionary<KeyCode, keyName> keyDictionary;
 
-
+    protected List<KeyCode> activeInputs = new List<KeyCode>();
 
 
     //방향 입력 변수
@@ -48,7 +48,7 @@ public class InputManager : MonoBehaviour
     bool isPress;
 
 
-    
+
 
 
 
@@ -78,125 +78,151 @@ public class InputManager : MonoBehaviour
 
     public void InputCommand()
     {
-        if (Input.anyKey)
+        List<KeyCode> pressedInput = new List<KeyCode>();
+
+        List<KeyCode> releasedInput = new List<KeyCode>();
+
+        if (Input.anyKey || Input.anyKeyDown)
         {
             foreach (var dic in keyDictionary)
             {
-                if (Input.GetKeyDown(dic.Key)) // 눌렀다.
+                if (Input.GetKey(dic.Key))
                 {
-                    switch (dic.Value)
-                    {
-                        //회피
-                        //공격 도중에는 사용할 수 없다. (Tree에서 Dec으로 처리)
-                        //스킬 사용중에는 사용할 수 없다. (Tree에서 Dec으로 처리)
-                        //누르면 1회 회피한다.
-                        //대기 상태를 취소한다.
-                        //가드를 취소한다.
-                        //이동을 취소한다.
-                        case keyName.Dodge:
-                            ButtonEvent_Dodge();
-                            break;
+                    activeInputs.Remove(dic.Key); // 중복 입력 방지
+                    activeInputs.Add(dic.Key); // 활성화 된 키 추가, 액티브에는 하나의 키는 하나만 존재
+                    pressedInput.Add(dic.Key); // 이번 업데이트에 눌렸던  모든 키
 
-                        //공격
-                        //회피 도중에는 사용할 수 없다. (Tree에서 Dec으로 처리)
-                        //+회피 입력 도중 입력시 회피 이후 공격(다른 액션)을 한다.(추가구현 필요)
-                        //스킬 사용중에는 사용할 수 없다. (Tree에서 Dec으로 처리)
-                        //누르면 1회 공격
-                        //대기 상태를 취소한다.
-                        //가드를 취소한다.
-                        //이동을 취소한다.
-                        case keyName.Attack:
-                            ButtonEvent_Attack();
-                            break;
-                    }
+                    Debug.Log(dic.Key + " 키 눌렸다.");
+
+                    BttonAction(dic.Value);
+                    ButtonActionDown(dic.Value);
                 }
-                if (Input.GetKey(dic.Key)) // 눌리고 있는 중
-                {
-                    switch (dic.Value)
-                    {
-                        //가드
-                        //누르는 동안 막는다.
-                        //대기 상태를 취소한다.
-                        //가드를 사용하는 동안 이동 불가.
-                        case keyName.Guard:
-                            ButtonEvent_Guard_Start();
-                            break;
-
-                        //이동
-                        //누르는 동안 해당 방향으로 이동
-                        //대기 상태를 취소한다.
-                        case keyName.Direction:
-                            ButtonEvent_Direction_Start();
-                            break;
-
-
-                        //스킬 사용
-                        //누르는 동안 스킬 사용 시도한다.
-                        //대기 상태를 취소한다.
-                        //쿨타임중에는 스킬을 사용을 해도 사용되지 않아야한다.
-                        case keyName.SkillUse_1:
-                            ButtonEvent_SkillUse_1();
-                            break;
-                        case keyName.SkillUse_2:
-                            ButtonEvent_SkillUse_2();
-                            break;
-                        case keyName.SkillUse_3:
-                            ButtonEvent_SkillUse_3();
-                            break;
-                        case keyName.SkillUse_4:
-                            ButtonEvent_SkillUse_4();
-                            break;
-                    }
-
-                }
-
-                if (Input.GetKeyUp(dic.Key)) //뗏다
-                {
-                    switch (dic.Value)
-                    {
-                        //가드
-                        //가드를 종료한다.
-                        //대기 상태를 취소한다.
-                        case keyName.Guard:
-                            ButtonEvent_Guard_End();
-                            break;
-
-                        //이동
-                        //이동을 종료한다.
-                        //대기 상태를 취소한다.
-                        case keyName.Direction:
-                            ButtonEvent_Direction_End();
-                            break;
-
-                        //컨트롤 캐릭터 교체
-                        //눌렀다 떼면 교체가 이뤄진다.
-                        case keyName.SelectCharacter_1:
-                            //미구현
-                            ButtonEvent_SelectCharacter_1();
-                            break;
-                        case keyName.SelectCharacter_2:
-                            //미구현
-                            ButtonEvent_SelectCharacter_2();
-                            break;
-                        case keyName.SelectCharacter_3:
-                            //미구현
-                            ButtonEvent_SelectCharacter_3();
-                            break;
-                        case keyName.SelectCharacter_4:
-                            //미구현
-                            ButtonEvent_SelectCharacter_4();
-                            break;
-                    }
-
-                }
-
             }
+        }
+
+        foreach (var code in activeInputs)
+        {
+            releasedInput.Add(code); // 활성화 된 모든 키 추가
+
+            if (!pressedInput.Contains(code))
+            {
+                releasedInput.Remove(code);
+
+                Debug.Log(code + " 키 풀림.");
+
+                ButtonActionUp(keyDictionary[code]);
+            }
+
+        }
+
+        activeInputs = releasedInput;
+    }
+
+    void BttonAction(keyName name)
+    {
+        switch (name)
+        {
+            //가드
+            //누르는 동안 막는다.
+            //대기 상태를 취소한다.
+            //가드를 사용하는 동안 이동 불가.
+            case keyName.Guard:
+                ButtonEvent_Guard_Start();
+                break;
+
+            //이동
+            //누르는 동안 해당 방향으로 이동
+            //대기 상태를 취소한다.
+            case keyName.Direction:
+                ButtonEvent_Direction_Start();
+                break;
+
+
+            //스킬 사용
+            //누르는 동안 스킬 사용 시도한다.
+            //대기 상태를 취소한다.
+            //쿨타임중에는 스킬을 사용을 해도 사용되지 않아야한다.
+            case keyName.SkillUse_1:
+                ButtonEvent_SkillUse_1();
+                break;
+            case keyName.SkillUse_2:
+                ButtonEvent_SkillUse_2();
+                break;
+            case keyName.SkillUse_3:
+                ButtonEvent_SkillUse_3();
+                break;
+            case keyName.SkillUse_4:
+                ButtonEvent_SkillUse_4();
+                break;
         }
     }
 
-    public void ContrrollCharacter(Character PlayableCharacter)
+    void ButtonActionDown(keyName name)
     {
-        characterManager.SetCharacter(PlayableCharacter);
+        switch (name)
+        {
+            //회피
+            //공격 도중에는 사용할 수 없다. (Tree에서 Dec으로 처리)
+            //스킬 사용중에는 사용할 수 없다. (Tree에서 Dec으로 처리)
+            //누르면 1회 회피한다.
+            //대기 상태를 취소한다.
+            //가드를 취소한다.
+            //이동을 취소한다.
+            case keyName.Dodge:
+                ButtonEvent_Dodge();
+                break;
+
+            //공격
+            //회피 도중에는 사용할 수 없다. (Tree에서 Dec으로 처리)
+            //+회피 입력 도중 입력시 회피 이후 공격(다른 액션)을 한다.(추가구현 필요)
+            //스킬 사용중에는 사용할 수 없다. (Tree에서 Dec으로 처리)
+            //누르면 1회 공격
+            //대기 상태를 취소한다.
+            //가드를 취소한다.
+            //이동을 취소한다.
+            case keyName.Attack:
+                ButtonEvent_Attack();
+                break;
+        }
+    }
+
+    void ButtonActionUp(keyName name)
+    {
+        switch (name)
+        {
+            //가드
+            //가드를 종료한다.
+            //대기 상태를 취소한다.
+            case keyName.Guard:
+                ButtonEvent_Guard_End();
+                break;
+
+            //이동
+            //이동을 종료한다.
+            //대기 상태를 취소한다.
+            case keyName.Direction:
+                ButtonEvent_Direction_End();
+                break;
+
+            //컨트롤 캐릭터 교체
+            //눌렀다 떼면 교체가 이뤄진다.
+            case keyName.SelectCharacter_1:
+                //미구현
+                ButtonEvent_SelectCharacter_1();
+                break;
+            case keyName.SelectCharacter_2:
+                //미구현
+                ButtonEvent_SelectCharacter_2();
+                break;
+            case keyName.SelectCharacter_3:
+                //미구현
+                ButtonEvent_SelectCharacter_3();
+                break;
+            case keyName.SelectCharacter_4:
+                //미구현
+                ButtonEvent_SelectCharacter_4();
+                break;
+        }
     }
 
     void ButtonEvent_Direction_Start()
@@ -206,12 +232,14 @@ public class InputManager : MonoBehaviour
         //대기 상태를 취소한다.
         horizontal = Input.GetAxisRaw("Horizontal");
         vertical = Input.GetAxisRaw("Vertical");
-        characterManager.GetCharacter().SetMovement(new Vector3(horizontal, vertical, 0).normalized);
-        characterManager.GetCharacter().isMove = true;
+        characterManager.Character.Movement = new Vector3(horizontal, vertical, 0).normalized;
+        characterManager.Character.IsMove = true;
+        //Debug.Log("이동 버튼 눌리는중");
     }
     void ButtonEvent_Direction_End()
     {
-        characterManager.GetCharacter().isMove = false;
+        characterManager.Character.IsMove = false;
+        //Debug.Log("이동 버튼 뗏다.");
     }
     void ButtonEvent_Dodge()
     {
@@ -222,9 +250,9 @@ public class InputManager : MonoBehaviour
         //대기 상태를 취소한다.
         //가드를 취소한다.
         //이동을 취소한다.
-        characterManager.GetCharacter().isDodge = true;
-        characterManager.GetCharacter().isGuard = false;
-        characterManager.GetCharacter().isMove = false;
+        characterManager.Character.IsDodge = true;
+        characterManager.Character.IsGuard = false;
+        characterManager.Character.IsMove = false;
         //test
         Debug.Log("Avoide");
     }
@@ -238,7 +266,7 @@ public class InputManager : MonoBehaviour
     }
     void ButtonEvent_Guard_End()
     {
-        characterManager.GetCharacter().isGuard = false;
+        characterManager.Character.IsGuard = false;
         //test
         Debug.Log("Guard end");
     }
@@ -252,26 +280,26 @@ public class InputManager : MonoBehaviour
         //대기 상태를 취소한다.
         //가드를 취소한다.
         //이동을 취소한다.
-        characterManager.GetCharacter().isAttack = true;
-        characterManager.GetCharacter().isGuard = false;
-        characterManager.GetCharacter().isMove = false;
+        characterManager.Character.IsAttack = true;
+        characterManager.Character.IsGuard = false;
+        characterManager.Character.IsMove = false;
     }
     void ButtonEvent_SkillUse_1()
     {
-        characterManager.GetCharacter().isSkilluse_1 = true;
+        characterManager.Character.IsSkilluse_1 = true;
     }
     void ButtonEvent_SkillUse_2()
     {
-        characterManager.GetCharacter().isSkilluse_2 = true;
+        characterManager.Character.IsSkilluse_2 = true;
 
     }
     void ButtonEvent_SkillUse_3()
     {
-        characterManager.GetCharacter().isSkilluse_3 = true;
+        characterManager.Character.IsSkilluse_3 = true;
     }
     void ButtonEvent_SkillUse_4()
     {
-        characterManager.GetCharacter().isSkilluse_4 = true;
+        characterManager.Character.IsSkilluse_4 = true;
     }
     void ButtonEvent_SelectCharacter_1()
     {

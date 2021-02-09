@@ -6,8 +6,9 @@ public class BT_Action_GUARD : BT_Leaf
 {
     public override bool Run()
     {
-        if (character.isGuard)
+        if (character.IsGuard)
         {
+            character.CurrentState = character.GuardState;
             return true;
         }
         else

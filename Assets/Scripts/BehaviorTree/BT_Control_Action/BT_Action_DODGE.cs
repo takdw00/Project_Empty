@@ -6,8 +6,9 @@ public class BT_Action_DODGE : BT_Leaf
 {
     public override bool Run()
     {
-        if (character.isDodge)
+        if (character.IsDodge)
         {
+            character.CurrentState = character.DodgeState;
             return true;
         }
         else

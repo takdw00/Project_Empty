@@ -4,13 +4,19 @@ using UnityEngine;
 
 public class NPCBehaviorTree : CharacterControl
 {
+    //이 클래스는 NPC AI의 기본이 되는 클래스이다.
+    //이 클래스를 상속 받아 다양한 AI 클래스를 만들어서 사용하도록 한다.
+
+
+
+
     PCharacter character;
 
     private void Awake()
     {
         //부모 오브젝트 character 스크립트의 변수 연결 작업
         character = transform.parent.GetComponent<PCharacter>();
-        character.SetNpcAIContol(GetComponent<NPCBehaviorTree>());
+        character.NpcAI_Control = GetComponent<NPCBehaviorTree>();
 
         //분기 노드
         //NPC 분기 트리는 재설정 필요.

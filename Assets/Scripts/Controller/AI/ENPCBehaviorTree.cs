@@ -4,15 +4,7 @@ using UnityEngine;
 
 public class ENPCBehaviorTree : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    //이 클래스는 ENPC AI의 기본이 되는 클래스이다.
+    //이 클래스를 상속 받아 다양한 AI 클래스를 만들어서 사용하도록 한다.
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

@@ -6,9 +6,9 @@ public class BT_Action_IDLE : BT_Leaf
 {
     public override bool Run()
     {
-        if (character.isIdle)
+        if (character.IsIdle)
         {
-            character.SetState(character.GetIdleState());
+            character.CurrentState = character.IdleState;
             return true;
         }
         else

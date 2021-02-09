@@ -6,18 +6,13 @@ public class CharacterManager : MonoBehaviour
 {
     Character character;
 
+    #region Properties
+    public Character Character { get { return character; } }
+    #endregion
+
     private void Start()
     {
-        character = transform.GetChild(0).GetComponent<Character>();
-    }
-
-    public Character GetCharacter()
-    {
-        return character;
-    }
-    public void SetCharacter(Character setcharacter)
-    {
-        character= setcharacter;
+        character = GetComponent<Character>();
     }
 
 }

@@ -6,8 +6,9 @@ public class BT_Action_READY_TO_ATTACK : BT_Leaf
 {
     public override bool Run()
     {
-        if (character.isReadyToAttack)
+        if (character.IsReadyToAttack)
         {
+            character.CurrentState = character.ReadyToAttackState;
             return true;
         }
         else

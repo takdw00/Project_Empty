@@ -6,9 +6,9 @@ public class BT_Action_ATTACK : BT_Leaf
 {
     public override bool Run()
     {
-        if(character.isAttack)
+        if (character.IsAttack)
         {
-            character.SetState(character.GetAttackState());
+            character.CurrentState = character.AttackState;
             return true;
         }
         else

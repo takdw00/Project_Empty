@@ -1,173 +1,128 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Character : MonoBehaviour
 {
-    public Rigidbody2D c_Rigidbody2D;
+    private Rigidbody2D myRigidbody;
 
-    //이름
-    private string Character_Nmae;
 
-    //스탯
-    protected float maxHP;
-    protected float nowHP;
-    protected float maxSpeed;
-    protected float nowSpeed;
-    protected float maxAttackPower;
-    protected float nowAttackPower;
-    protected float maxDefensePower;
-    protected float nowDefensePower;
+    #region Character Stat Variables
 
-    //State
-    protected State state;
-    protected Idle idle;
-    protected ReadyToAttack readyToAttack;
-    protected Dodge Dodge;
-    protected Guard guard;
-    protected Move move;
-    protected Attack attack;
-    protected Death death;
-    protected SkillUse skillUse;
-    protected TargetSearch targetSearch;
-    protected Hit hit;
-    //protected StateChanger stateChanger;
+    //SerailizeField로 한 것들은 인스펙터에서 디자인할 수 있도록 함
 
-    //Status enabled or not
-    public bool isHit;
-    public bool isInput;
-    public bool isIdle;
-    public bool isReadyToAttack;
-    public bool isDodge;
-    public bool isGuard;
-    public bool isMove;
-    public bool isAttack;
-    public bool isSkilluse_1;
-    public bool isSkilluse_2;
-    public bool isSkilluse_3;
-    public bool isSkilluse_4;
+    [SerializeField] private float maxHP;
+    private float nowHP;
+    [SerializeField] private float maxSpeed;
+    private float nowSpeed;
+    [SerializeField] private float maxAttackPower;
+    private float nowAttackPower;
+    [SerializeField] private float maxDefensePower;
+    private float nowDefensePower;
 
-    //Control
-    protected CharacterControl controller;
-    protected PlayerControl player_Control;
-    protected NPCBehaviorTree npcAI_Control;
+    #endregion
+
+
+    #region States
+
+    private State currentState;
+
+    private State_Attack attackState;
+    private State_Death deathState;
+    private State_Dodge dodgeState;
+    private State_Guard guardState;
+    private State_Hit hitState;
+    private State_Idle idleState;
+    private State_Move moveState;
+    private State_ReadyToAttack readyToAttackState;
+    private State_SkillUse skillUseState;
+    private State_TargetSearch targetSearchState;
+
+
+    #endregion
+
 
     //판단 변수
-    public Vector3 movement;
+    private Vector3 movement;
 
-    public string GetCharacterNmae()
-    {
-        return Character_Nmae;
-    }
+    #region Status enabled or not
+    private bool isAttack;
+    private bool isDeath;
+    private bool isDodge;
+    private bool isGuard;
+    private bool isIdle;
+    private bool isHit;
+    private bool isInput;
+    private bool isMove;
+    private bool isReadyToAttack;
+    private bool isSkilluse_1;
+    private bool isSkilluse_2;
+    private bool isSkilluse_3;
+    private bool isSkilluse_4;
 
-    public Rigidbody2D GetRigidbody2D()
-    {
-        return c_Rigidbody2D;
-    }
 
-    public float GetNowSpeed()
-    {
-        return nowSpeed;
-    }
 
-    public void SetMovement(Vector3 vector3)
-    {
-        movement = vector3;
-    }
+    #endregion
 
-    public Vector3 GetMovemnet()
-    {
-        return movement;
-    }
+    #region Properties
 
-    public State GetState()
-    {
-        return state;
-    }
-    public void SetState(State currentState)
-    {
-        state = currentState;
-    }
+    //읽기 전용
+    public Rigidbody2D MyRigidbody { get { return myRigidbody; } }
 
-    public Attack GetAttackState()
+    //파생 클래스에서만 쓰기 가능
+    public float NowHP { get { return nowHP; } protected set { nowHP = value; } }
+    public float NowSpeed { get { return nowSpeed; } protected set { nowSpeed = value; } }
+    public float NowAttackPower { get { return nowAttackPower; } protected set { nowAttackPower = value; } }
+    public float NowDefensePower { get { return nowDefensePower; } protected set { nowDefensePower = value; } }
+
+    public bool IsAttack { get { return isAttack; } set { isAttack = value; } }
+    public bool IsDeath { get { return isDeath; } set { isDeath = value; } }
+    public bool IsDodge { get { return isDodge; } set { isDodge = value; } }
+    public bool IsGuard { get { return isGuard; } set { isGuard = value; } }
+    public bool IsIdle { get { return isIdle; } set { isIdle = value; } }
+    public bool IsInput { get { return isInput; } set { isInput = value; } }
+    public bool IsHit { get { return isHit; } set { isHit = value; } }
+    public bool IsMove { get { return isMove; } set { isMove = value; } }
+    public bool IsReadyToAttack { get { return isReadyToAttack; } set { isReadyToAttack = value; } }
+    public bool IsSkilluse_1 { get { return isSkilluse_1; } set { isSkilluse_1 = value; } }
+    public bool IsSkilluse_2 { get { return isSkilluse_2; } set { isSkilluse_2 = value; } }
+    public bool IsSkilluse_3 { get { return isSkilluse_3; } set { isSkilluse_3 = value; } }
+    public bool IsSkilluse_4 { get { return isSkilluse_4; } set { isSkilluse_4 = value; } }
+
+
+
+    public State CurrentState { get { return currentState; } set { currentState = value; } }
+
+    //읽기 전용
+    public State_Attack AttackState { get { return attackState; } }
+    public State_Death DeathState { get { return deathState; } }
+    public State_Dodge DodgeState { get { return dodgeState; } }
+    public State_Guard GuardState { get { return guardState; } }
+    public State_Hit HitState { get { return hitState; } }
+    public State_Idle IdleState { get { return idleState; } }
+    public State_Move MoveState { get { return moveState; } }
+    public State_ReadyToAttack ReadyToAttackState { get { return readyToAttackState; } }
+    public State_SkillUse SkillUseState { get { return skillUseState; } }
+    public State_TargetSearch TargetSearchState { get { return targetSearchState; } }
+
+    public Vector3 Movement { get { return movement; } set { movement = value; } }
+
+
+    #endregion
+
+    protected virtual void Awake() 
     {
-        return attack;
-    }
-    public void SetAttackState(Attack state)
-    {
-        attack = state;
-    }
-    public Dodge GetDodgeeState()
-    {
-        return Dodge;
-    }
-    public void SetDodgeeState(Dodge state)
-    {
-        Dodge = state;
-    }
-    public Death GetDeathState()
-    {
-        return death;
-    }
-    public void SetDeathState(Death state)
-    {
-         death = state;
-    }
-    public Guard GetGuardState()
-    {
-        return guard;
-    }
-    public void SetGuardState(Guard state)
-    {
-        guard= state;
-    }
-    public Idle GetIdleState()
-    {
-        return idle;
-    }
-    public void  SetIdleState(Idle state)
-    {
-         idle = state;
-    }
-    public Move GetMoveState()
-    {
-        return move;
-    }
-    public void SetMoveState(Move state)
-    {
-         move = state;
-    }
-    public ReadyToAttack GetReadyToAttackState()
-    {
-        return readyToAttack;
-    }
-    public void SetReadyToAttackState(ReadyToAttack state)
-    {
-         readyToAttack= state;
-    }
-    public SkillUse GetSkillUseState()
-    {
-        return skillUse;
-    }
-    public void  SetSkillUseState(SkillUse state)
-    {
-         skillUse= state;
-    }
-    public Hit GetHitState()
-    {
-        return hit;
-    }
-    public void SetHitState(Hit state)
-    {
-        hit = state;
+        myRigidbody = GetComponent<Rigidbody2D>();
+
+        //State
+        attackState = GetComponent<State_Attack>();
+        deathState = GetComponent<State_Death>();
+        dodgeState = GetComponent<State_Dodge>();
+        guardState = GetComponent<State_Guard>();
+        hitState = GetComponent<State_Hit>();
+        idleState = GetComponent<State_Idle>();
+        moveState = GetComponent<State_Move>();
+        readyToAttackState = GetComponent<State_ReadyToAttack>();
+        skillUseState = GetComponent<State_SkillUse>();
+        targetSearchState = GetComponent<State_TargetSearch>();
     }
 
-    public TargetSearch GetTargetSearchState()
-    {
-        return targetSearch;
-    }
-    public void  SetTargetSearchState(TargetSearch state)
-    {
-         targetSearch= state;
-    }
 }

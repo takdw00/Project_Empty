@@ -12,15 +12,7 @@ public class BT_Action_INPUT : BT_Leaf
     }
     public override bool Run()
     {
-        if (character.isInput)
-        {
-            inputManager.InputCommand();
-            character.isInput = false;
-            return true;
-        }
-        else
-        {
-            return false;
-        }
+        inputManager.InputCommand();
+        return true;
     }
 }

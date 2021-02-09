@@ -1,13 +1,14 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class State : MonoBehaviour
+public abstract class State : MonoBehaviour
 {
-    protected Character character;
+    private Character characterRef;
+    protected Character CharacterRef { get { return characterRef; } private set { } }
 
-    public virtual void Execution()
+    protected virtual void Awake()
     {
-
+        characterRef = GetComponent<Character>();
     }
+
+    public abstract void Execution();
 }

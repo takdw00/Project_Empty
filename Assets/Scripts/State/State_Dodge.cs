@@ -7,5 +7,6 @@ public class State_Dodge : State
     public override void Execution()
     {
 
+        CharacterRef.IsDodge = false;
     }
 }

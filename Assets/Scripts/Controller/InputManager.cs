@@ -82,20 +82,26 @@ public class InputManager : MonoBehaviour
 
         List<KeyCode> releasedInput = new List<KeyCode>();
 
+
         if (Input.anyKey || Input.anyKeyDown)
         {
             foreach (var dic in keyDictionary)
             {
+                if(Input.GetKeyDown(dic.Key))
+                {
+                    ButtonActionDown(dic.Value);
+                    //Debug.Log(dic.Key + " 키 눌렀다");
+                }
                 if (Input.GetKey(dic.Key))
                 {
                     activeInputs.Remove(dic.Key); // 중복 입력 방지
                     activeInputs.Add(dic.Key); // 활성화 된 키 추가, 액티브에는 하나의 키는 하나만 존재
                     pressedInput.Add(dic.Key); // 이번 업데이트에 눌렸던  모든 키
 
-                    Debug.Log(dic.Key + " 키 눌렸다.");
+                    //Debug.Log(dic.Key + " 키 누르는 중");
 
                     BttonAction(dic.Value);
-                    ButtonActionDown(dic.Value);
+                    
                 }
             }
         }
@@ -108,7 +114,7 @@ public class InputManager : MonoBehaviour
             {
                 releasedInput.Remove(code);
 
-                Debug.Log(code + " 키 풀림.");
+                //Debug.Log(code + " 키 풀림.");
 
                 ButtonActionUp(keyDictionary[code]);
             }
@@ -128,6 +134,7 @@ public class InputManager : MonoBehaviour
             //가드를 사용하는 동안 이동 불가.
             case keyName.Guard:
                 ButtonEvent_Guard_Start();
+                //Debug.Log("가드 중");
                 break;
 
             //이동
@@ -170,6 +177,7 @@ public class InputManager : MonoBehaviour
             //이동을 취소한다.
             case keyName.Dodge:
                 ButtonEvent_Dodge();
+                //Debug.Log("회피 실행");
                 break;
 
             //공격
@@ -254,7 +262,7 @@ public class InputManager : MonoBehaviour
         characterManager.Character.IsGuard = false;
         characterManager.Character.IsMove = false;
         //test
-        Debug.Log("Avoide");
+        Debug.Log("Dodge");
     }
     void ButtonEvent_Guard_Start()
     {

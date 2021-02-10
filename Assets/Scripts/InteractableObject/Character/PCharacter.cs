@@ -52,4 +52,9 @@ public class PCharacter : Character
         CurrentState.Execution();
     }
 
+    private void FixedUpdate()
+    {
+        
+
+    }
 }

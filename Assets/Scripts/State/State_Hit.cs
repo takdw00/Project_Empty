@@ -6,11 +6,12 @@ public class State_Hit : State , IDamageable
 {
     public override void Execution()
     {
-
+        TakeDamage();
+        CharacterRef.IsHit = false;
     }
 
     public void TakeDamage()
     {
-        throw new System.NotImplementedException();
+        Debug.Log("대미지를 입음.");
     }
 }

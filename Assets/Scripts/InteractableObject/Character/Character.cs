@@ -16,11 +16,13 @@ public class Character : InteractableObject
     [SerializeField] private float current_Character_Experience; //현재 캐릭터 경험치 테이블
     private float now_Character_Experience; //현재 경험치
 
-    ///스탯 경험치
-    [SerializeField] private float current_Strength_Experience; //현재 힘 경험치 테이블
-    private float now_Strength_Experience; //현재 힘 경험치
+    ///스탯 경험치 
     [SerializeField] private float current_Vigor_Experience; //현재 체력 경험치 테이블
     private float now_Vigor_Experience; //현재 체력 경험치
+    [SerializeField] private float current_Endurance_Experience; //현재 지구력 경험치 테이블
+    private float now_Endurance_Experience; //현재 지구력 경험치
+    [SerializeField] private float current_Strength_Experience; //현재 힘 경험치 테이블
+    private float now_Strength_Experience; //현재 힘 경험치
     [SerializeField] private float current_Intelligence_Experience; //현재 지력 경험치 테이블
     private float now_Intelligence_Experience; //현재 지력 경험치
     [SerializeField] private float current_Dexterity_Experience; //현재 기량 경험치 테이블
@@ -31,10 +33,13 @@ public class Character : InteractableObject
     private float now_Charisma_Experience; //현재 매력 경험치
 
     ///플레이어가 선택할 수 있는 스탯(직접 수정 가능)
-    [SerializeField] private float defult_Strength; //힘
-    private float now_Strength;
+
     [SerializeField] private float defult_Vigor; //체력
     private float now_Vigor;
+    [SerializeField] private float defult_Endurance; //지구력
+    private float now_Endurance;
+    [SerializeField] private float defult_Strength; //힘
+    private float now_Strength;
     [SerializeField] private float defult_Intelligence; //지력
     private float now_Intelligence;
     [SerializeField] private float defult_Dexterity; //기량

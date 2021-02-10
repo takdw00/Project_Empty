@@ -21,6 +21,8 @@ public class Character : InteractableObject
     private float now_Vigor_Experience; //현재 체력 경험치
     [SerializeField] private float current_Endurance_Experience; //현재 지구력 경험치 테이블
     private float now_Endurance_Experience; //현재 지구력 경험치
+    [SerializeField] private float current_Attunement_Experience; //현재 집중력 경험치 테이블
+    private float now_Attunement_Experience; //현재 집중력 경험치
     [SerializeField] private float current_Strength_Experience; //현재 힘 경험치 테이블
     private float now_Strength_Experience; //현재 힘 경험치
     [SerializeField] private float current_Intelligence_Experience; //현재 지력 경험치 테이블
@@ -38,6 +40,8 @@ public class Character : InteractableObject
     private float now_Vigor;
     [SerializeField] private float defult_Endurance; //지구력
     private float now_Endurance;
+    [SerializeField] private float defult_Attunement; //집중력
+    private float now_Attunement;
     [SerializeField] private float defult_Strength; //힘
     private float now_Strength;
     [SerializeField] private float defult_Intelligence; //지력

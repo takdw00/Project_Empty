@@ -26,7 +26,7 @@ public class PCharacter : Character
 
 
         ///스탯설정(임시)
-        NowSpeed = 10;
+        Now_Speed = 10;
 
         //Defult state
         CurrentState = IdleState;

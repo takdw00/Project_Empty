@@ -6,7 +6,7 @@ public class State_Move : State
     {
         if(CharacterRef.IsMove)
         {
-            Vector3 moveRes = CharacterRef.Movement * CharacterRef.NowSpeed * Time.deltaTime;
+            Vector3 moveRes = CharacterRef.Movement * CharacterRef.Now_Speed * Time.deltaTime;
             CharacterRef.MyRigidbody.MovePosition(transform.position + moveRes);
         }
         else

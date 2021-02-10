@@ -658,3 +658,51 @@ Received Import Request.
 Start importing Assets/Scripts/InteractableObject/InteractableObject.cs using Guid(0689ef98ab1265d4982868350c36ba47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a60c969e93abc94a0a42b0a175fbfc6') in 0.019109 seconds
   Import took 0.039988 seconds .
 
+========================================================================
+Received Import Request.
+  Time since last request: 1406.606702 seconds.
+  path: Assets/Scripts/InteractableObject/InteractableObject.cs
+  artifactKey: Guid(0689ef98ab1265d4982868350c36ba47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/InteractableObject/InteractableObject.cs using Guid(0689ef98ab1265d4982868350c36ba47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47b1331b400741fa92faaf74cbcfc5f1') in 0.019571 seconds
+  Import took 0.037018 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006860 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.66 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.495 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.82 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3494 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 153.6 MB.
+System memory in use after: 153.8 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 4216.
+Total: 3.784700 ms (FindLiveObjects: 0.436800 ms CreateObjectMapping: 0.190100 ms MarkObjects: 3.132900 ms  DeleteObjects: 0.023200 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 94.075896 seconds.
+  path: Assets/Scripts/InteractableObject/Character/Character.cs
+  artifactKey: Guid(7abfc97c134841e44a554d74293409d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/InteractableObject/Character/Character.cs using Guid(7abfc97c134841e44a554d74293409d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20bd3cf2f3fe366374ae67537e6f807b') in 0.012075 seconds
+  Import took 0.020731 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.022621 seconds.
+  path: Assets/Scripts/InteractableObject/Character/Character.cs
+  artifactKey: Guid(7abfc97c134841e44a554d74293409d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/InteractableObject/Character/Character.cs using Guid(7abfc97c134841e44a554d74293409d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20bd3cf2f3fe366374ae67537e6f807b') in 0.005170 seconds
+  Import took 0.012775 seconds .
+

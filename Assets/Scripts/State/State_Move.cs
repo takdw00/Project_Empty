@@ -8,6 +8,7 @@ public class State_Move : State
         {
             Vector3 moveRes = CharacterRef.Movement * CharacterRef.Now_Speed * Time.deltaTime;
             CharacterRef.MyRigidbody.MovePosition(transform.position + moveRes);
+            //Debug.Log("X : "+CharacterRef.Movement.x+" Y : "+CharacterRef.Movement.y);
         }
         else
         {

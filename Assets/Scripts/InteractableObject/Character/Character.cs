@@ -209,6 +209,13 @@ public class Character : InteractableObject
 
     #endregion
 
+
+
+
+
+
+
+
     protected virtual void Awake() 
     {
         myRigidbody = GetComponent<Rigidbody2D>();
@@ -225,5 +232,6 @@ public class Character : InteractableObject
         skillUseState = GetComponent<State_SkillUse>();
         targetSearchState = GetComponent<State_TargetSearch>();
     }
+
 
 }

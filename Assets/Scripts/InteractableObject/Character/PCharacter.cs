@@ -57,4 +57,11 @@ public class PCharacter : Character
         
 
     }
+
+    //private void OnDrawGizmos()
+    //{
+    //    Gizmos.color = Color.red;
+    //    Gizmos.DrawWireCube(transform.position, new Vector3(2,2,2));
+    //    Debug.Log("Gizmos");
+    //}
 }

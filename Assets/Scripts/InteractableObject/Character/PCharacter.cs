@@ -32,7 +32,15 @@ public class PCharacter : Character
         CurrentState = IdleState;
     }
 
-    
+
+    private void Start()
+    {
+        //시작 무기(초기)
+        weapon_Right = transform.Find("PCharacter_Weapon").transform.Find("Melee_Weapon").transform.Find("Sword").transform.Find("Long_Sword").GetComponent<Weapon>();
+        weapon_Right.gameObject.SetActive(true);
+    }
+
+
 
 
     private void Update()
@@ -55,13 +63,5 @@ public class PCharacter : Character
     private void FixedUpdate()
     {
         
-
     }
-
-    //private void OnDrawGizmos()
-    //{
-    //    Gizmos.color = Color.red;
-    //    Gizmos.DrawWireCube(transform.position, new Vector3(2,2,2));
-    //    Debug.Log("Gizmos");
-    //}
 }

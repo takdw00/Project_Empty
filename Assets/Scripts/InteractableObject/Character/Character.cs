@@ -4,6 +4,12 @@ public class Character : InteractableObject
 {
     private Rigidbody2D myRigidbody;
 
+    //이동 방향
+    private Vector3 movement;
+
+    //공격 대상
+    [SerializeField] LayerMask enemy_LayerMask;
+
 
     #region Character Stat Variables
 
@@ -91,7 +97,6 @@ public class Character : InteractableObject
 
     #endregion
 
-
     #region States
 
     private State currentState;
@@ -110,14 +115,6 @@ public class Character : InteractableObject
 
     #endregion
 
-
-    //이동 방향
-    private Vector3 movement;
-
-    //공격 대상
-    [SerializeField] LayerMask enemy_LayerMask;
-
-
     #region Status enabled or not
     private bool isAttack;
     private bool isDodge;
@@ -135,6 +132,17 @@ public class Character : InteractableObject
     //isDeath 는 상위 클래스에서 선언
 
 
+
+    #endregion
+
+    #region Equip
+
+    //Weapon
+    protected Weapon weapon_Right;
+    protected Weapon weapon_Left;
+
+    //Armor
+    protected Armor armor;
 
     #endregion
 
@@ -207,8 +215,13 @@ public class Character : InteractableObject
     public LayerMask Enemy_layerMask { get { return enemy_LayerMask; } }
 
 
-    #endregion
+    //Epuip
+    ///Weapon
+    public Weapon Weapon_Right { get { return weapon_Right; } set { weapon_Right = value; } }
+    public Weapon Weapon_Left { get { return weapon_Left; }set { weapon_Left = value; } }
 
+
+    #endregion
 
 
 

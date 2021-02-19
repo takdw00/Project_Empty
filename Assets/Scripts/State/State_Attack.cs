@@ -4,31 +4,25 @@ using UnityEngine;
 
 public class State_Attack : State
 {
-    Vector3 position;
-    Vector3 range_Half;
-    Quaternion direction;
+
+    float front_Delay=0.2f;
+    float now_Front_Delay;
+    float back_Delay=0.4f;
+    float now_Back_Delay;
+
+    float now_Delay;
 
 
-
-
-    #region AttackRange
-    GameObject attackDirection;
-    AttackRange attackRange;
+    #region empty
     #endregion
 
 
 
     private void Start()
     {
-        position.x = transform.position.x+CharacterRef.Now_Attack_Width_Range / 2;
-        range_Half.x = CharacterRef.Now_Attack_Length_Range / 2;
-        direction = new Quaternion(0, 0, 225, 0); //기본 방향
 
-        #region AttackRange
-        //임시
-        //나중에 무기 선택에 따라서 컴포넌트 교체작업 필요할거 같음.
-        attackDirection = transform.Find("AttackDirection").gameObject;
-        attackRange = transform.Find("AttackDirection").transform.Find("Weapon").transform.Find("Defult_Weapon").GetComponent<AttackRange>();
+
+        #region empty
         #endregion
 
 
@@ -40,25 +34,23 @@ public class State_Attack : State
 
     private void MeleeAttack()
     {
-
-        InteractableObject hitObject;
-
-        direction.z = Determine_Direction_Of_Attack(CharacterRef.Movement);
-        attackDirection.transform.rotation = direction; // 가시화를 위한 오브젝트 회전
-        position = attackRange.transform.position;
-        range_Half = attackRange.Range / 2;
-
-
-        //실제 생성되는 ovelapBox는 AttackDirection의 회전 값에 영향을 받지 않는다.
-        Collider[] colls = Physics.OverlapBox(position, range_Half, direction, CharacterRef.Enemy_layerMask);
-
-
-
-
-        for (int i=0; i<colls.Length; i++)
-        {   
-            hitObject = colls[i].GetComponent<InteractableObject>();
-            hitObject.IsHit = true;
+        //Debug.Log("선딜 " + now_Front_Delay);
+        now_Front_Delay +=Time.deltaTime;
+        if(now_Front_Delay>front_Delay)
+        {
+            CharacterRef.Weapon_Right.gameObject.GetComponent<MeshCollider>().enabled=true; // 애니 상황에 맞춰 수정 필요
+            now_Back_Delay +=Time.deltaTime;
+            Debug.Log("공격");
+        }
+        if(now_Back_Delay>back_Delay)
+        {
+            CharacterRef.Weapon_Right.gameObject.GetComponent<MeshCollider>().enabled = false; // 애니 상황에 맞춰 수정 필요
+            now_Front_Delay = 0;
+            now_Back_Delay = 0;
+            CharacterRef.IsAttack = false;
+            CharacterRef.IsIdle = false;
+            CharacterRef.IsReadyToAttack = true;
+            Debug.Log("후딜");
         }
     }
 

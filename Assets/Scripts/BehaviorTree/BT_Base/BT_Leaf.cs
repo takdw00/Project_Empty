@@ -29,7 +29,7 @@ public abstract class BT_Leaf : BT_Node
 
     private void Awake()
     {
-        character = transform.parent.GetComponent<Character>();
+        character = transform.parent.transform.parent.GetComponent<Character>();
     }
     //자식노드에 다른 노드를 연결할 필요가 없으니 접근할 필요도 없음.
 

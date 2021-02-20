@@ -15,7 +15,7 @@ public class NPCBehaviorTree : CharacterControl
     private void Awake()
     {
         //부모 오브젝트 character 스크립트의 변수 연결 작업
-        character = transform.parent.GetComponent<PCharacter>();
+        character = transform.parent.transform.parent.GetComponent<PCharacter>();
         character.NpcAI_Control = GetComponent<NPCBehaviorTree>();
 
         //분기 노드
@@ -28,7 +28,7 @@ public class NPCBehaviorTree : CharacterControl
 
         //액션 노드
         action_IDLE = gameObject.AddComponent<BT_Action_IDLE>();
-        action_READY_TO_ATTACK = gameObject.AddComponent<BT_Action_READY_TO_ATTACK>();
+        action_BATTLE_IDLE = gameObject.AddComponent<BT_Action_BATTLE_IDLE>();
         action_HIT = gameObject.AddComponent<BT_Action_HIT>();
         action_INPUT = gameObject.AddComponent<BT_Action_INPUT>();
         action_AVOIDE = gameObject.AddComponent<BT_Action_DODGE>();

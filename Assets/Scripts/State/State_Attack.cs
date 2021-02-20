@@ -5,12 +5,7 @@ using UnityEngine;
 public class State_Attack : State
 {
 
-    float front_Delay=0.2f;
-    float now_Front_Delay;
-    float back_Delay=0.4f;
-    float now_Back_Delay;
 
-    float now_Delay;
 
 
     #region empty
@@ -29,29 +24,12 @@ public class State_Attack : State
     }
     public override void Execution()
     {
-        MeleeAttack();
+        CharacterRef.Weapon_Right.Attack();
     }
 
     private void MeleeAttack()
     {
-        //Debug.Log("선딜 " + now_Front_Delay);
-        now_Front_Delay +=Time.deltaTime;
-        if(now_Front_Delay>front_Delay)
-        {
-            CharacterRef.Weapon_Right.gameObject.GetComponent<MeshCollider>().enabled=true; // 애니 상황에 맞춰 수정 필요
-            now_Back_Delay +=Time.deltaTime;
-            Debug.Log("공격");
-        }
-        if(now_Back_Delay>back_Delay)
-        {
-            CharacterRef.Weapon_Right.gameObject.GetComponent<MeshCollider>().enabled = false; // 애니 상황에 맞춰 수정 필요
-            now_Front_Delay = 0;
-            now_Back_Delay = 0;
-            CharacterRef.IsAttack = false;
-            CharacterRef.IsIdle = false;
-            CharacterRef.IsReadyToAttack = true;
-            Debug.Log("후딜");
-        }
+
     }
 
     //공격 방향 각도 계산

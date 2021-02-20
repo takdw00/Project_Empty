@@ -108,7 +108,7 @@ public class Character : InteractableObject
     private State_Hit hitState;
     private State_Idle idleState;
     private State_Move moveState;
-    private State_ReadyToAttack readyToAttackState;
+    private State_Battle_Idle battle_idleState;
     private State_SkillUse skillUseState;
     private State_TargetSearch targetSearchState;
 
@@ -203,7 +203,7 @@ public class Character : InteractableObject
     public State_Hit HitState { get { return hitState; } }
     public State_Idle IdleState { get { return idleState; } }
     public State_Move MoveState { get { return moveState; } }
-    public State_ReadyToAttack ReadyToAttackState { get { return readyToAttackState; } }
+    public State_Battle_Idle BattleIdleState { get { return battle_idleState; } }
     public State_SkillUse SkillUseState { get { return skillUseState; } }
     public State_TargetSearch TargetSearchState { get { return targetSearchState; } }
 
@@ -241,7 +241,7 @@ public class Character : InteractableObject
         hitState = GetComponent<State_Hit>();
         idleState = GetComponent<State_Idle>();
         moveState = GetComponent<State_Move>();
-        readyToAttackState = GetComponent<State_ReadyToAttack>();
+        battle_idleState = GetComponent<State_Battle_Idle>();
         skillUseState = GetComponent<State_SkillUse>();
         targetSearchState = GetComponent<State_TargetSearch>();
     }

@@ -14,7 +14,7 @@ public class CharacterControl : MonoBehaviour
 
 
     protected BT_Action_IDLE action_IDLE; // 기본 액션
-    protected BT_Action_READY_TO_ATTACK action_READY_TO_ATTACK; // 공격 준비 액션
+    protected BT_Action_BATTLE_IDLE action_BATTLE_IDLE; // 공격 준비 액션
     protected BT_Action_HIT action_HIT; // 경직 액션
     protected BT_Action_INPUT action_INPUT; // 입력 액션
     protected BT_Action_DODGE action_AVOIDE; // 회피 액션

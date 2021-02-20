@@ -9,7 +9,7 @@ public class PCBehaviorTree : CharacterControl
     private void Awake()
     {
         //부모 오브젝트 character 스크립트의 변수 연결 작업
-        character = transform.parent.GetComponent<PCharacter>();
+        character = transform.parent.transform.parent.GetComponent<PCharacter>();
         character.Player_Control = GetComponent<PCBehaviorTree>();
 
         //분기 노드
@@ -20,7 +20,7 @@ public class PCBehaviorTree : CharacterControl
 
         //액션 노드
         action_IDLE = gameObject.AddComponent<BT_Action_IDLE>();
-        action_READY_TO_ATTACK = gameObject.AddComponent<BT_Action_READY_TO_ATTACK>();
+        action_BATTLE_IDLE = gameObject.AddComponent<BT_Action_BATTLE_IDLE>();
         action_HIT = gameObject.AddComponent<BT_Action_HIT>();
         action_INPUT = gameObject.AddComponent<BT_Action_INPUT>();
         action_AVOIDE = gameObject.AddComponent<BT_Action_DODGE>();
@@ -34,7 +34,7 @@ public class PCBehaviorTree : CharacterControl
         //Player controller
         sel_CharacterState.AddChildNode(sel_Hit_Status_Branch); // 경직 액션 분기
         sel_CharacterState.AddChildNode(action_IDLE); //대기 액션
-        sel_CharacterState.AddChildNode(action_READY_TO_ATTACK); //공격준비 액션
+        sel_CharacterState.AddChildNode(action_BATTLE_IDLE); //공격준비 액션
 
         sel_Hit_Status_Branch.AddChildNode(action_HIT); //경직 액션
         sel_Hit_Status_Branch.AddChildNode(seq_Input_Status_Branch); //입력 액션 분기

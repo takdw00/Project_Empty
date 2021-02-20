@@ -2,13 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BT_Action_READY_TO_ATTACK : BT_Leaf
+public class BT_Action_BATTLE_IDLE : BT_Leaf
 {
     public override bool Run()
     {
         if (character.IsReadyToAttack)
         {
-            character.CurrentState = character.ReadyToAttackState;
+            character.CurrentState = character.BattleIdleState;
             Debug.Log("공격 대기 상태");
             return true;
         }

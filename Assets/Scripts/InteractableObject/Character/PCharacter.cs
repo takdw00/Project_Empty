@@ -36,7 +36,7 @@ public class PCharacter : Character
     private void Start()
     {
         //시작 무기(초기)
-        weapon_Right = transform.Find("PCharacter_Weapon").transform.Find("Melee_Weapon").transform.Find("Sword").transform.Find("Long_Sword").GetComponent<Weapon>();
+        weapon_Right = transform.Find("Equip").transform.Find("Weapon_Right").transform.Find("PCharacter_Weapon").transform.Find("Melee_Weapon").transform.Find("Sword").transform.Find("Long_Sword").GetComponent<Weapon>();
         weapon_Right.gameObject.SetActive(true);
     }
 

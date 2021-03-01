@@ -45,7 +45,11 @@ public class InputManager : MonoBehaviour
     float vertical;
 
     //버튼 Up 감지용 변수
-    bool isPress;
+    //bool isPress;
+
+    //마우스 입력 방향 계산용
+    Camera myCamera;
+    Vector3 mousePosition;
 
 
 
@@ -62,8 +66,8 @@ public class InputManager : MonoBehaviour
                 {KeyCode.W, keyName.Direction},
                 {KeyCode.S, keyName.Direction},
                 {KeyCode.Space, keyName.Dodge},
-                {KeyCode.Mouse2, keyName.Guard},
-                {KeyCode.Mouse1, keyName.Attack},
+                {KeyCode.Mouse1, keyName.Guard},
+                {KeyCode.Mouse0, keyName.Attack},
                 {KeyCode.Z, keyName.SkillUse_1},
                 {KeyCode.X, keyName.SkillUse_2},
                 {KeyCode.C, keyName.SkillUse_3},
@@ -73,6 +77,7 @@ public class InputManager : MonoBehaviour
                 {KeyCode.Alpha3, keyName.SelectCharacter_3},
                 {KeyCode.Alpha4, keyName.SelectCharacter_4}
             };
+        myCamera = GameObject.Find("Main Camera").GetComponent<Camera>();
 
     }
 
@@ -85,6 +90,7 @@ public class InputManager : MonoBehaviour
 
         if (Input.anyKey || Input.anyKeyDown)
         {
+            //입력 감지
             foreach (var dic in keyDictionary)
             {
                 if(Input.GetKeyDown(dic.Key))
@@ -100,7 +106,7 @@ public class InputManager : MonoBehaviour
 
                     //Debug.Log(dic.Key + " 키 누르는 중");
 
-                    BttonAction(dic.Value);
+                    ButtonAction(dic.Value);
                     
                 }
             }
@@ -124,7 +130,7 @@ public class InputManager : MonoBehaviour
         activeInputs = releasedInput;
     }
 
-    void BttonAction(keyName name)
+    void ButtonAction(keyName name)
     {
         switch (name)
         {
@@ -240,7 +246,7 @@ public class InputManager : MonoBehaviour
         //대기 상태를 취소한다.
         horizontal = Input.GetAxisRaw("Horizontal");
         vertical = Input.GetAxisRaw("Vertical");
-        characterManager.Character.Movement = new Vector3(horizontal, vertical, 0).normalized;
+        characterManager.Character.Move_Direction = new Vector3(horizontal, vertical, 0).normalized;
         characterManager.Character.IsMove = true;
         //Debug.Log("이동 버튼 눌리는중");
     }
@@ -270,6 +276,8 @@ public class InputManager : MonoBehaviour
         //누르는 동안 막는다.
         //대기 상태를 취소한다.
         //가드를 사용하는 동안 이동 불가.
+        characterManager.Character.IsGuard = true;
+        Debug.Log("Guard start");
 
     }
     void ButtonEvent_Guard_End()
@@ -288,9 +296,19 @@ public class InputManager : MonoBehaviour
         //대기 상태를 취소한다.
         //가드를 취소한다.
         //이동을 취소한다.
+
+        mousePosition = Input.mousePosition;
+        mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
+
+        characterManager.Character.Attack_Direction = mousePosition- characterManager.Character.transform.position;
+        characterManager.Character.Attack_Direction = characterManager.Character.Attack_Direction.normalized;
+        
+        
         characterManager.Character.IsAttack = true;
         characterManager.Character.IsGuard = false;
         characterManager.Character.IsMove = false;
+
+        Debug.Log("공격 방향" + characterManager.Character.Attack_Direction);
     }
     void ButtonEvent_SkillUse_1()
     {

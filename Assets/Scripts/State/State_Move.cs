@@ -6,7 +6,7 @@ public class State_Move : State
     {
         if(CharacterRef.IsMove)
         {
-            Vector3 moveRes = CharacterRef.Movement * CharacterRef.Now_Speed * Time.deltaTime;
+            Vector3 moveRes = CharacterRef.Move_Direction * CharacterRef.Now_Speed * Time.deltaTime;
             CharacterRef.MyRigidbody.MovePosition(transform.position + moveRes);
             //Debug.Log("X : "+CharacterRef.Movement.x+" Y : "+CharacterRef.Movement.y);
         }

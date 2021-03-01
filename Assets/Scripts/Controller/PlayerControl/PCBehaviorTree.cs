@@ -42,10 +42,10 @@ public class PCBehaviorTree : CharacterControl
         seq_Input_Status_Branch.AddChildNode(action_INPUT); //입력 액션
         seq_Input_Status_Branch.AddChildNode(sel_Status_Replacement_Branch); //스테이터스 변경 분기
 
+        sel_Status_Replacement_Branch.AddChildNode(action_ATTACK); //공격 액션
         sel_Status_Replacement_Branch.AddChildNode(action_AVOIDE); //회피 액션
         sel_Status_Replacement_Branch.AddChildNode(action_GUARD); //가드 액션
         sel_Status_Replacement_Branch.AddChildNode(action_MOVE); //이동 액션
-        sel_Status_Replacement_Branch.AddChildNode(action_ATTACK); //공격 액션
         sel_Status_Replacement_Branch.AddChildNode(action_SKILL_USE); //스킬 사용 액션 ,이후 수정 필요할 수 있음.
     }
     public override void ControlCommand()

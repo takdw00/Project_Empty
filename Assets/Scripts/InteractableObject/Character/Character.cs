@@ -3,9 +3,12 @@
 public class Character : InteractableObject
 {
     private Rigidbody2D myRigidbody;
+    private Animator myAnimator;
+
 
     //이동 방향
-    private Vector3 movement;
+    private Vector3 move_Direction;
+    private Vector3 attack_Direction;
 
     //공격 대상
     [SerializeField] LayerMask enemy_LayerMask;
@@ -122,7 +125,7 @@ public class Character : InteractableObject
     private bool isIdle;
     private bool isInput;
     private bool isMove;
-    private bool isReadyToAttack;
+    private bool isBattle_Idle;
     private bool isSkilluse_1;
     private bool isSkilluse_2;
     private bool isSkilluse_3;
@@ -152,6 +155,8 @@ public class Character : InteractableObject
     ///읽기 전용
     public Rigidbody2D MyRigidbody { get { return myRigidbody; } }
 
+    //애니메이션
+    public Animator MyAnimator { get { return myAnimator; } set { myAnimator = value; } }
 
     //캐릭터 이름
 
@@ -184,7 +189,7 @@ public class Character : InteractableObject
     public bool IsIdle { get { return isIdle; } set { isIdle = value; } }
     public bool IsInput { get { return isInput; } set { isInput = value; } }
     public bool IsMove { get { return isMove; } set { isMove = value; } }
-    public bool IsReadyToAttack { get { return isReadyToAttack; } set { isReadyToAttack = value; } }
+    public bool IsBattle_Idle { get { return isBattle_Idle; } set { isBattle_Idle = value; } }
     public bool IsSkilluse_1 { get { return isSkilluse_1; } set { isSkilluse_1 = value; } }
     public bool IsSkilluse_2 { get { return isSkilluse_2; } set { isSkilluse_2 = value; } }
     public bool IsSkilluse_3 { get { return isSkilluse_3; } set { isSkilluse_3 = value; } }
@@ -208,7 +213,10 @@ public class Character : InteractableObject
     public State_TargetSearch TargetSearchState { get { return targetSearchState; } }
 
     //캐릭터 이동 방향
-    public Vector3 Movement { get { return movement; } set { movement = value; } }
+    public Vector3 Move_Direction { get { return move_Direction; } set { move_Direction = value; } }
+
+    //공격 방향
+    public Vector3 Attack_Direction { get { return attack_Direction; } set { attack_Direction = value; } }
 
     //공격 대상 레이어 마스크
     ///읽기 전용
@@ -232,6 +240,10 @@ public class Character : InteractableObject
     protected virtual void Awake() 
     {
         myRigidbody = GetComponent<Rigidbody2D>();
+
+        //Animation
+        myAnimator = GetComponent<Animator>();
+
 
         //State
         attackState = GetComponent<State_Attack>();

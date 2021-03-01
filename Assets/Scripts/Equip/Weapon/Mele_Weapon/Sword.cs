@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Sword : Weapon
 {
-    [SerializeField] float front_Delay = 0.2f;
+    [SerializeField] float front_Delay = 5.0f;
     float now_Front_Delay;
-    [SerializeField] float back_Delay = 0.4f;
+    [SerializeField] float back_Delay = 2.0f;
     float now_Back_Delay;
 
     private void OnTriggerEnter(Collider other)
@@ -23,10 +23,12 @@ public class Sword : Weapon
     }
     override public void Attack()
     {
-        //Debug.Log("¼±µô " + now_Front_Delay);
+        Debug.Log("¼±µô");
         now_Front_Delay += Time.deltaTime;
         if (now_Front_Delay > front_Delay)
         {
+            CharacterRef.IsMove = false;
+            CharacterRef.IsIdle = false;
             gameObject.GetComponent<MeshCollider>().enabled = true;
             now_Back_Delay += Time.deltaTime;
             Debug.Log("°ø°Ý");
@@ -37,8 +39,7 @@ public class Sword : Weapon
             now_Front_Delay = 0;
             now_Back_Delay = 0;
             CharacterRef.IsAttack = false;
-            CharacterRef.IsIdle = false;
-            CharacterRef.IsReadyToAttack = true;
+            CharacterRef.IsBattle_Idle = true;
             Debug.Log("ÈÄµô");
         }
     }

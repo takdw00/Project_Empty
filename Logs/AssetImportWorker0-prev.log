@@ -15,11 +15,11 @@ C:/Users/takdw/Documents/Project Empty
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-51919
+51627
 Successfully changed project path to: C:/Users/takdw/Documents/Project Empty
 C:/Users/takdw/Documents/Project Empty
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 83.72 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 89.92 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.2.1f1 (270dd8c3da1c)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/Resources/UnitySubsystems
@@ -36,288 +36,1520 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56312
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56552
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.006253 seconds.
+Registered in 0.003593 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 86.23 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 83.68 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.197 seconds
+- Completed reload, in  1.775 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.007488 seconds.
+Registered in 0.005048 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 82.32 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 84.15 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.209 seconds
+- Completed reload, in  1.433 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.13 seconds
-Refreshing native plugins compatible for Editor in 0.92 ms, found 1 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.10 seconds
+Refreshing native plugins compatible for Editor in 0.86 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3886 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 163.8 MB.
+System memory in use before: 163.9 MB.
 System memory in use after: 164.1 MB.
 
 Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 4339.
-Total: 3.686800 ms (FindLiveObjects: 0.481700 ms CreateObjectMapping: 0.406900 ms MarkObjects: 2.742600 ms  DeleteObjects: 0.054400 ms)
+Total: 3.155700 ms (FindLiveObjects: 0.447400 ms CreateObjectMapping: 0.260900 ms MarkObjects: 2.375900 ms  DeleteObjects: 0.060500 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Animations/Character/Male/Test_Male_Character_Normal_Animation/Test/D.controller
-  artifactKey: Guid(c07b16e581ac63e4d9297e74a6cb0068) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Character/Male/Test_Male_Character_Normal_Animation/Test/D.controller using Guid(c07b16e581ac63e4d9297e74a6cb0068) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62d3db9fcaeb84780210b687d9fcf5a9') in 0.076994 seconds
-  Import took 0.085028 seconds .
+  path: Assets/Prefabs/Test/Hero.prefab
+  artifactKey: Guid(bdfd6011b202bf043baa9fe4acead3be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Test/Hero.prefab using Guid(bdfd6011b202bf043baa9fe4acead3be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76cc5eb6ead2fae19d6609978d968730') in 0.329423 seconds
+  Import took 0.338537 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 12.264431 seconds.
-  path: Assets/Animations/Character/Male/Test_Male_Character_Normal_Animation/Test/LD.controller
-  artifactKey: Guid(0ed196baf22f1234eb121602f193d472) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Character/Male/Test_Male_Character_Normal_Animation/Test/LD.controller using Guid(0ed196baf22f1234eb121602f193d472) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87090544fb7f150cff012f608025d16c') in 0.017578 seconds
-  Import took 0.026886 seconds .
+  Time since last request: 0.000421 seconds.
+  path: Assets/Prefabs/PCharacter_Weapon.prefab
+  artifactKey: Guid(bbd6dd8d3a5245d4e91180b6db3d8b67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/PCharacter_Weapon.prefab using Guid(bbd6dd8d3a5245d4e91180b6db3d8b67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2dc8ec62ac165ef331982af779b4c2c1') in 0.011085 seconds
+  Import took 0.019052 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 13.181998 seconds.
-  path: Assets/Animations/Character/Male/Test_Male_Character_Normal_Animation/Test/LU.controller
-  artifactKey: Guid(0a6e3a13932a727449177a267bce6b93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Character/Male/Test_Male_Character_Normal_Animation/Test/LU.controller using Guid(0a6e3a13932a727449177a267bce6b93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd76296db2bd9a059cd5497dcf27d3f5a') in 0.016545 seconds
-  Import took 0.025323 seconds .
+  Time since last request: 228.773066 seconds.
+  path: Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Vertical Down Sword_Battle Attack1.png
+  artifactKey: Guid(8ab13740771a2ab47b9367aa9f37adc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Vertical Down Sword_Battle Attack1.png using Guid(8ab13740771a2ab47b9367aa9f37adc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33e1bbef348d002d60a59bc6aca65373') in 0.105409 seconds
+  Import took 0.126108 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 22.865168 seconds.
-  path: Assets/Animations/Character/Male/Test_Male_Character_Normal_Animation/Test/RD.controller
-  artifactKey: Guid(f071c30c7689e654ca3fc3c77e1b5fe1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Character/Male/Test_Male_Character_Normal_Animation/Test/RD.controller using Guid(f071c30c7689e654ca3fc3c77e1b5fe1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be31a3da75e7e430317037a46e5ed034') in 0.017486 seconds
-  Import took 0.025180 seconds .
+  Time since last request: 0.000267 seconds.
+  path: Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Vertical Down Sword_Battle Attack3.png
+  artifactKey: Guid(2142a9f000990df4dbf24e7bfa42eb68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Vertical Down Sword_Battle Attack3.png using Guid(2142a9f000990df4dbf24e7bfa42eb68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9921fadff72174e8ab000575095a663') in 0.036799 seconds
+  Import took 0.046686 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 6.780797 seconds.
-  path: Assets/Animations/Character/Male/Test_Male_Character_Normal_Animation/Test/RU.controller
-  artifactKey: Guid(38813cd2dbed026439c5a9be979af8f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Character/Male/Test_Male_Character_Normal_Animation/Test/RU.controller using Guid(38813cd2dbed026439c5a9be979af8f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3eb5c9da5b2e2013f89864c4ea15ff5') in 0.015900 seconds
-  Import took 0.024986 seconds .
+  Time since last request: 0.000266 seconds.
+  path: Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Vertical Down Sword_Battle Attack2.png
+  artifactKey: Guid(c66c99d83446f7744bf7a3def8843cac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Vertical Down Sword_Battle Attack2.png using Guid(c66c99d83446f7744bf7a3def8843cac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7990e9c66a7c5d1981618fb41903eda4') in 0.034345 seconds
+  Import took 0.042765 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 5.689994 seconds.
-  path: Assets/Animations/Character/Male/Test_Male_Character_Normal_Animation/Test/U.controller
-  artifactKey: Guid(c5a88742079fb4944815e46a7584d4f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Character/Male/Test_Male_Character_Normal_Animation/Test/U.controller using Guid(c5a88742079fb4944815e46a7584d4f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10f7b339b678d85847f13b806614b59b') in 0.017297 seconds
-  Import took 0.025109 seconds .
+  Time since last request: 0.000258 seconds.
+  path: Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Vertical Down Sword_Battle Attack6.png
+  artifactKey: Guid(b49bafd1d1690f6479940654a044885e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Vertical Down Sword_Battle Attack6.png using Guid(b49bafd1d1690f6479940654a044885e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34f2c2336c78940665024ec4ed918ccc') in 0.034680 seconds
+  Import took 0.043379 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000635 seconds.
+  path: Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Vertical Down Sword_Battle Attack5.png
+  artifactKey: Guid(869702cd5b688c540a7a36b709118ed1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Vertical Down Sword_Battle Attack5.png using Guid(869702cd5b688c540a7a36b709118ed1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3642967a3ea75c2da9b94e8c8dfe8cd3') in 0.030085 seconds
+  Import took 0.039867 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000287 seconds.
+  path: Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Vertical Down Sword_Battle Attack4.png
+  artifactKey: Guid(a190a583dc0d9c540899df4da89179d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Vertical Down Sword_Battle Attack4.png using Guid(a190a583dc0d9c540899df4da89179d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1dc297671e9339e7eb095f70599a87d') in 0.041571 seconds
+  Import took 0.051908 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2112.260537 seconds.
+  path: Assets/Animations/Weapon/Test_Male_Weapon_Sword/New Animator Controller.controller
+  artifactKey: Guid(eebf4f452d4502347af0e9e168fc3821) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Weapon/Test_Male_Weapon_Sword/New Animator Controller.controller using Guid(eebf4f452d4502347af0e9e168fc3821) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd9c1e1b0e45d50aeee9f5692bb3fe51') in 0.031991 seconds
+  Import took 0.086811 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 22.081807 seconds.
+  path: Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test_Male_Weaponr_Normal_Sword_Attack.controller
+  artifactKey: Guid(eebf4f452d4502347af0e9e168fc3821) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test_Male_Weaponr_Normal_Sword_Attack.controller using Guid(eebf4f452d4502347af0e9e168fc3821) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e40563f4b71b77707e206d3b8c756354') in 0.033324 seconds
+  Import took 0.042686 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.007538 seconds.
+Registered in 0.008635 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.78 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0.85 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.352 seconds
+- Completed reload, in  1.494 seconds
 Platform modules already initialized, skipping
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.91 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0.79 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3715 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 154.2 MB.
-System memory in use after: 154.4 MB.
+System memory in use before: 159.8 MB.
+System memory in use after: 160.1 MB.
 
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 4342.
-Total: 2.701700 ms (FindLiveObjects: 0.352500 ms CreateObjectMapping: 0.163000 ms MarkObjects: 2.156400 ms  DeleteObjects: 0.028700 ms)
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 4389.
+Total: 4.166900 ms (FindLiveObjects: 0.482800 ms CreateObjectMapping: 0.482200 ms MarkObjects: 3.177600 ms  DeleteObjects: 0.022700 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 1767.182562 seconds.
+  path: Assets/Test/Original/Character/Male/Character_Battle_State/Melee_Weapon/Sword/Attack
+  artifactKey: Guid(6639ed8c06fdc404ca9f92a2a9194b84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test/Original/Character/Male/Character_Battle_State/Melee_Weapon/Sword/Attack using Guid(6639ed8c06fdc404ca9f92a2a9194b84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e345bcacc307a96fb151024d31d09ff') in 0.019833 seconds
+  Import took 0.031202 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.662122 seconds.
+  path: Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Battle_Idle/Vertical Down Sword_Battle Idle1.png
+  artifactKey: Guid(18ad6074b2e13dc458b9aa357b17cd17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Battle_Idle/Vertical Down Sword_Battle Idle1.png using Guid(18ad6074b2e13dc458b9aa357b17cd17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '109abdad8929856d00621531ab885739') in 0.081979 seconds
+  Import took 0.092311 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000267 seconds.
+  path: Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Battle_Idle/Vertical Down Sword_Battle Idle6.png
+  artifactKey: Guid(b1190cd699aae9647b11ef38f53bcbec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Battle_Idle/Vertical Down Sword_Battle Idle6.png using Guid(b1190cd699aae9647b11ef38f53bcbec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30551daf5446d049572e52d8df8ec086') in 0.029284 seconds
+  Import took 0.038126 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000258 seconds.
+  path: Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Battle_Idle/Vertical Down Sword_Battle Idle2.png
+  artifactKey: Guid(e45035a8acfe72f4da27819c874b4ab5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Battle_Idle/Vertical Down Sword_Battle Idle2.png using Guid(e45035a8acfe72f4da27819c874b4ab5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ab14429fe61393dafb4f98b73570ba1') in 0.039176 seconds
+  Import took 0.047739 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000321 seconds.
+  path: Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Battle_Idle/Vertical Down Sword_Battle Idle4.png
+  artifactKey: Guid(5cd59f1648bdd714fa7e09221b30090b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Battle_Idle/Vertical Down Sword_Battle Idle4.png using Guid(5cd59f1648bdd714fa7e09221b30090b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc11c3c7ee26496614f4b5eca7cf31b9') in 0.029941 seconds
+  Import took 0.038757 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000258 seconds.
+  path: Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Battle_Idle/Vertical Down Sword_Battle Idle3.png
+  artifactKey: Guid(763e91cc7bd689247bd0cceac738dc73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Battle_Idle/Vertical Down Sword_Battle Idle3.png using Guid(763e91cc7bd689247bd0cceac738dc73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b19a98f14eb9a0c265d6a02671555ef2') in 0.035215 seconds
+  Import took 0.043853 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000252 seconds.
+  path: Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Battle_Idle/Vertical Down Sword_Battle Idle5.png
+  artifactKey: Guid(8d339b3d236ac9843997c13d8f798b25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Battle_Idle/Vertical Down Sword_Battle Idle5.png using Guid(8d339b3d236ac9843997c13d8f798b25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd367ec7b58333cf15f6f7be03d64380') in 0.038095 seconds
+  Import took 0.047619 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.007869 seconds.
+Registered in 0.005216 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.73 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 1.05 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.480 seconds
+- Completed reload, in  1.276 seconds
 Platform modules already initialized, skipping
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.92 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0.94 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3715 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 154.3 MB.
-System memory in use after: 154.5 MB.
+System memory in use before: 159.9 MB.
+System memory in use after: 160.2 MB.
 
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 4345.
-Total: 3.397200 ms (FindLiveObjects: 0.477000 ms CreateObjectMapping: 0.405400 ms MarkObjects: 2.493300 ms  DeleteObjects: 0.019600 ms)
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 4392.
+Total: 3.241500 ms (FindLiveObjects: 0.433300 ms CreateObjectMapping: 0.191600 ms MarkObjects: 2.595000 ms  DeleteObjects: 0.020600 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 1453.167130 seconds.
+  path: Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Left Down Sword_Battle Attack1.png
+  artifactKey: Guid(b1466baba6e5ec345b471309312e2fad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Left Down Sword_Battle Attack1.png using Guid(b1466baba6e5ec345b471309312e2fad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13d756b3ddc95452b6ab08b77014faaf') in 0.082001 seconds
+  Import took 0.092422 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000280 seconds.
+  path: Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Left Up Sword_Battle Attack6.png
+  artifactKey: Guid(e2a7dfb959f476d4da6527dd0a7d8a9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Left Up Sword_Battle Attack6.png using Guid(e2a7dfb959f476d4da6527dd0a7d8a9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a7f690bd41314ac5e751df4cae4a3f2') in 0.030640 seconds
+  Import took 0.038810 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000248 seconds.
+  path: Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Vertical Up Sword_Battle Attack6.png
+  artifactKey: Guid(3b984c5bbf92ce44f9d2ce65abe88685) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Vertical Up Sword_Battle Attack6.png using Guid(3b984c5bbf92ce44f9d2ce65abe88685) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e4b45b021c5436b0677fc6b55661e56') in 0.028866 seconds
+  Import took 0.036998 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000322 seconds.
+  path: Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Left Down Sword_Battle Attack2.png
+  artifactKey: Guid(eab47d49694f13a4bbec806f86974f88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Left Down Sword_Battle Attack2.png using Guid(eab47d49694f13a4bbec806f86974f88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7fee6f2ab244d407d482dc4b42fe5e40') in 0.033554 seconds
+  Import took 0.041579 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000275 seconds.
+  path: Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Vertical Up Sword_Battle Attack5.png
+  artifactKey: Guid(5760c9d5d0508e449badf0c3062a3a63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Vertical Up Sword_Battle Attack5.png using Guid(5760c9d5d0508e449badf0c3062a3a63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3dcc39fa17a81e57dfee71471170f24') in 0.027659 seconds
+  Import took 0.035762 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000235 seconds.
+  path: Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Left Down Sword_Battle Attack3.png
+  artifactKey: Guid(ea053484a9413404cbfcd46821bc22fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Left Down Sword_Battle Attack3.png using Guid(ea053484a9413404cbfcd46821bc22fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1df322e63a5a43bc1c10750fc344c63') in 0.030058 seconds
+  Import took 0.038437 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000226 seconds.
+  path: Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Left Up Sword_Battle Attack3.png
+  artifactKey: Guid(9fd2231a1fb2d4d4fb614f8460991cba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Left Up Sword_Battle Attack3.png using Guid(9fd2231a1fb2d4d4fb614f8460991cba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e320498922107cbfa28705f7988993e2') in 0.031994 seconds
+  Import took 0.040241 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000246 seconds.
+  path: Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Left Down Sword_Battle Attack4.png
+  artifactKey: Guid(f290d8dfd2176924abbd13b22e5f6650) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Left Down Sword_Battle Attack4.png using Guid(f290d8dfd2176924abbd13b22e5f6650) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f06d807c072659f04279ec273be5a630') in 0.030082 seconds
+  Import took 0.037447 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000234 seconds.
+  path: Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Vertical Down Sword_Battle Attack3.png
+  artifactKey: Guid(2142a9f000990df4dbf24e7bfa42eb68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Vertical Down Sword_Battle Attack3.png using Guid(2142a9f000990df4dbf24e7bfa42eb68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fcf0fcdd0fa6d488492aba37ee38007') in 0.028841 seconds
+  Import took 0.038153 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000260 seconds.
+  path: Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Left Up Sword_Battle Attack4.png
+  artifactKey: Guid(2481a0e9d520e5f45a468d230e89ea46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Left Up Sword_Battle Attack4.png using Guid(2481a0e9d520e5f45a468d230e89ea46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7b51388dcee518efe9ce068dd298b86') in 0.046114 seconds
+  Import took 0.061592 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000373 seconds.
+  path: Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Vertical Down Sword_Battle Attack2.png
+  artifactKey: Guid(c66c99d83446f7744bf7a3def8843cac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Vertical Down Sword_Battle Attack2.png using Guid(c66c99d83446f7744bf7a3def8843cac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3bd4e84afdf7fde015a79e8a75c9b5b2') in 0.038036 seconds
+  Import took 0.047024 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000259 seconds.
+  path: Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Vertical Up Sword_Battle Attack1.png
+  artifactKey: Guid(20a09d15b4b5e0f4799868fd1415bc62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Vertical Up Sword_Battle Attack1.png using Guid(20a09d15b4b5e0f4799868fd1415bc62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48d5fcd392157c5e6ac9f1ae827f7e25') in 0.032708 seconds
+  Import took 0.042403 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000252 seconds.
+  path: Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Vertical Up Sword_Battle Attack4.png
+  artifactKey: Guid(d4e0384cafb000d438d463eaabaf27e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Vertical Up Sword_Battle Attack4.png using Guid(d4e0384cafb000d438d463eaabaf27e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e389e70ee5059166f7ddf338513c4b60') in 0.027540 seconds
+  Import took 0.035192 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000244 seconds.
+  path: Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Vertical Down Sword_Battle Attack6.png
+  artifactKey: Guid(b49bafd1d1690f6479940654a044885e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Vertical Down Sword_Battle Attack6.png using Guid(b49bafd1d1690f6479940654a044885e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42d1093b29c53f6d5b2dff104a1f3ddb') in 0.028340 seconds
+  Import took 0.036130 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000583 seconds.
+  path: Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Left Down Sword_Battle Attack5.png
+  artifactKey: Guid(40a3d9b120e63e943a5411f1bd7a9b8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Left Down Sword_Battle Attack5.png using Guid(40a3d9b120e63e943a5411f1bd7a9b8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5cbb7a8e71524c95ac8811b396e24494') in 0.030567 seconds
+  Import took 0.038718 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000255 seconds.
+  path: Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Vertical Down Sword_Battle Attack5.png
+  artifactKey: Guid(869702cd5b688c540a7a36b709118ed1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Vertical Down Sword_Battle Attack5.png using Guid(869702cd5b688c540a7a36b709118ed1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca195ccbd3199515f65c0475c3f64178') in 0.018530 seconds
+  Import took 0.026139 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000239 seconds.
+  path: Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Vertical Up Sword_Battle Attack3.png
+  artifactKey: Guid(87aa49e2a7317ef41bd033692e16824e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Vertical Up Sword_Battle Attack3.png using Guid(87aa49e2a7317ef41bd033692e16824e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0b873770269819cfcf552957d87e201') in 0.026494 seconds
+  Import took 0.033531 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000237 seconds.
+  path: Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Left Up Sword_Battle Attack5.png
+  artifactKey: Guid(59dcfd9e650bf4a40acfde7796580b82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Left Up Sword_Battle Attack5.png using Guid(59dcfd9e650bf4a40acfde7796580b82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '799fa3844b2c9efb6e692a6c8eae8537') in 0.025301 seconds
+  Import took 0.032772 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000292 seconds.
+  path: Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Left Down Sword_Battle Attack6.png
+  artifactKey: Guid(935ee8235ad16774d922fb40674b4111) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Left Down Sword_Battle Attack6.png using Guid(935ee8235ad16774d922fb40674b4111) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '724407668e8daf3257f1292753b1a0ef') in 0.024451 seconds
+  Import took 0.032315 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000244 seconds.
+  path: Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Left Up Sword_Battle Attack2.png
+  artifactKey: Guid(6d3b59a513e32bd4b9e31f95ff4bc3e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Left Up Sword_Battle Attack2.png using Guid(6d3b59a513e32bd4b9e31f95ff4bc3e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be90287b7deb9850233728fac19f2c05') in 0.028596 seconds
+  Import took 0.035837 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000234 seconds.
+  path: Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Vertical Down Sword_Battle Attack1.png
+  artifactKey: Guid(8ab13740771a2ab47b9367aa9f37adc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Vertical Down Sword_Battle Attack1.png using Guid(8ab13740771a2ab47b9367aa9f37adc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '489e98381e7485705d4868a3d63984ff') in 0.023724 seconds
+  Import took 0.031939 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000247 seconds.
+  path: Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Vertical Up Sword_Battle Attack2.png
+  artifactKey: Guid(99da41ddaf7c35f4e91d76d6254483db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Vertical Up Sword_Battle Attack2.png using Guid(99da41ddaf7c35f4e91d76d6254483db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '702d868516d1e471a1bae03a404aef1a') in 0.026331 seconds
+  Import took 0.034036 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000237 seconds.
+  path: Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Left Up Sword_Battle Attack1.png
+  artifactKey: Guid(b8945908678e39d44b48db7f21eba155) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Left Up Sword_Battle Attack1.png using Guid(b8945908678e39d44b48db7f21eba155) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f390dbd1bb33efae1a91c6bb795be97') in 0.024697 seconds
+  Import took 0.033887 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000217 seconds.
+  path: Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Vertical Down Sword_Battle Attack4.png
+  artifactKey: Guid(a190a583dc0d9c540899df4da89179d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Vertical Down Sword_Battle Attack4.png using Guid(a190a583dc0d9c540899df4da89179d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8188f84fe685b5601d70f4ecdd806c0') in 0.025614 seconds
+  Import took 0.033360 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.226500 seconds.
+  path: Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Materials
+  artifactKey: Guid(03440d8cbfd701d409fd7a5edf5d72c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Materials using Guid(03440d8cbfd701d409fd7a5edf5d72c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a0380faaa1ae1da02f51abe224202c6') in 0.014031 seconds
+  Import took 0.023635 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.017081 seconds.
+  path: Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Materials/Left Down Sword_Battle Attack4.mat
+  artifactKey: Guid(40d8ab7453158c74b903406f960ea7fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Materials/Left Down Sword_Battle Attack4.mat using Guid(40d8ab7453158c74b903406f960ea7fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96c34ae4a39266fff6fa4089a0bf912a') in 0.187134 seconds
+  Import took 0.197198 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 91.801740 seconds.
+  path: Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Left Down Sword_Battle Attack4.png
+  artifactKey: Guid(f290d8dfd2176924abbd13b22e5f6650) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Left Down Sword_Battle Attack4.png using Guid(f290d8dfd2176924abbd13b22e5f6650) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22272bc4517ddf3330611b16515d0db9') in 0.018561 seconds
+  Import took 0.026927 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.551028 seconds.
+  path: Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Left Down Sword_Battle Attack1.png
+  artifactKey: Guid(b1466baba6e5ec345b471309312e2fad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Left Down Sword_Battle Attack1.png using Guid(b1466baba6e5ec345b471309312e2fad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c08a68c6f89d7f33c51d976c7bf1f7f1') in 0.017456 seconds
+  Import took 0.026258 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.006398 seconds.
+  path: Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Left Down Sword_Battle Attack1.png
+  artifactKey: Guid(b1466baba6e5ec345b471309312e2fad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Left Down Sword_Battle Attack1.png using Guid(b1466baba6e5ec345b471309312e2fad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c08a68c6f89d7f33c51d976c7bf1f7f1') in 0.017386 seconds
+  Import took 0.026014 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000279 seconds.
+  path: Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Left Up Sword_Battle Attack6.png
+  artifactKey: Guid(e2a7dfb959f476d4da6527dd0a7d8a9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Left Up Sword_Battle Attack6.png using Guid(e2a7dfb959f476d4da6527dd0a7d8a9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b0dab19e05a6ac2b79d5f5692f00dde') in 0.018535 seconds
+  Import took 0.026952 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000300 seconds.
+  path: Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Vertical Up Sword_Battle Attack6.png
+  artifactKey: Guid(3b984c5bbf92ce44f9d2ce65abe88685) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Vertical Up Sword_Battle Attack6.png using Guid(3b984c5bbf92ce44f9d2ce65abe88685) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '294ba7822f59d4c52cf065bd8e9492dd') in 0.013981 seconds
+  Import took 0.023762 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000247 seconds.
+  path: Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Left Down Sword_Battle Attack2.png
+  artifactKey: Guid(eab47d49694f13a4bbec806f86974f88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Left Down Sword_Battle Attack2.png using Guid(eab47d49694f13a4bbec806f86974f88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a27d181bd2cc4315db218aacce56c4d') in 0.019778 seconds
+  Import took 0.027802 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000459 seconds.
+  path: Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Vertical Up Sword_Battle Attack5.png
+  artifactKey: Guid(5760c9d5d0508e449badf0c3062a3a63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Vertical Up Sword_Battle Attack5.png using Guid(5760c9d5d0508e449badf0c3062a3a63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0cebc2470a87c64e6267a995fd9422d') in 0.015983 seconds
+  Import took 0.024379 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000272 seconds.
+  path: Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Left Down Sword_Battle Attack3.png
+  artifactKey: Guid(ea053484a9413404cbfcd46821bc22fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Left Down Sword_Battle Attack3.png using Guid(ea053484a9413404cbfcd46821bc22fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0583d8d927d57f1513c40b59b4d53e33') in 0.014604 seconds
+  Import took 0.022445 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000249 seconds.
+  path: Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Left Up Sword_Battle Attack3.png
+  artifactKey: Guid(9fd2231a1fb2d4d4fb614f8460991cba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Left Up Sword_Battle Attack3.png using Guid(9fd2231a1fb2d4d4fb614f8460991cba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21b1c3217f45ce6a353f2b3f7d3c31fe') in 0.014844 seconds
+  Import took 0.023890 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000219 seconds.
+  path: Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Left Down Sword_Battle Attack4.png
+  artifactKey: Guid(f290d8dfd2176924abbd13b22e5f6650) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Left Down Sword_Battle Attack4.png using Guid(f290d8dfd2176924abbd13b22e5f6650) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e4d2bb53cf2a76df8b9c58206f521c6') in 0.015606 seconds
+  Import took 0.024812 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000253 seconds.
+  path: Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Vertical Down Sword_Battle Attack3.png
+  artifactKey: Guid(2142a9f000990df4dbf24e7bfa42eb68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Vertical Down Sword_Battle Attack3.png using Guid(2142a9f000990df4dbf24e7bfa42eb68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7192f28c77c23fca0cbb3438d1d0c89b') in 0.016123 seconds
+  Import took 0.029055 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000235 seconds.
+  path: Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Left Up Sword_Battle Attack4.png
+  artifactKey: Guid(2481a0e9d520e5f45a468d230e89ea46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Left Up Sword_Battle Attack4.png using Guid(2481a0e9d520e5f45a468d230e89ea46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf3d281cad0c12b92f9b31d047e79e48') in 0.016888 seconds
+  Import took 0.025836 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000257 seconds.
+  path: Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Vertical Down Sword_Battle Attack2.png
+  artifactKey: Guid(c66c99d83446f7744bf7a3def8843cac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Vertical Down Sword_Battle Attack2.png using Guid(c66c99d83446f7744bf7a3def8843cac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efe580f0605c4a723241272e8e1ae484') in 0.020432 seconds
+  Import took 0.028849 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000233 seconds.
+  path: Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Vertical Up Sword_Battle Attack1.png
+  artifactKey: Guid(20a09d15b4b5e0f4799868fd1415bc62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Vertical Up Sword_Battle Attack1.png using Guid(20a09d15b4b5e0f4799868fd1415bc62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94d87a2beba1d138033105e7c6f85e57') in 0.012853 seconds
+  Import took 0.022605 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000268 seconds.
+  path: Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Vertical Up Sword_Battle Attack4.png
+  artifactKey: Guid(d4e0384cafb000d438d463eaabaf27e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Vertical Up Sword_Battle Attack4.png using Guid(d4e0384cafb000d438d463eaabaf27e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '825a6a2cdeecdd693ce84312ea015ded') in 0.015048 seconds
+  Import took 0.022979 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000365 seconds.
+  path: Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Vertical Down Sword_Battle Attack6.png
+  artifactKey: Guid(b49bafd1d1690f6479940654a044885e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Vertical Down Sword_Battle Attack6.png using Guid(b49bafd1d1690f6479940654a044885e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba1be9c4aad39ee228ebf7312723684b') in 0.013416 seconds
+  Import took 0.021939 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000454 seconds.
+  path: Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Left Down Sword_Battle Attack5.png
+  artifactKey: Guid(40a3d9b120e63e943a5411f1bd7a9b8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Left Down Sword_Battle Attack5.png using Guid(40a3d9b120e63e943a5411f1bd7a9b8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd956566e217bb481eec62a94eefa6b6c') in 0.015755 seconds
+  Import took 0.022935 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000238 seconds.
+  path: Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Vertical Down Sword_Battle Attack5.png
+  artifactKey: Guid(869702cd5b688c540a7a36b709118ed1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Vertical Down Sword_Battle Attack5.png using Guid(869702cd5b688c540a7a36b709118ed1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b42302646e1c951fa9ab09aeccd0bb1') in 0.016081 seconds
+  Import took 0.023418 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000728 seconds.
+  path: Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Vertical Up Sword_Battle Attack3.png
+  artifactKey: Guid(87aa49e2a7317ef41bd033692e16824e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Vertical Up Sword_Battle Attack3.png using Guid(87aa49e2a7317ef41bd033692e16824e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1efc45e14c30d92f9dee3ae43616239f') in 0.020447 seconds
+  Import took 0.028881 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000227 seconds.
+  path: Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Left Up Sword_Battle Attack5.png
+  artifactKey: Guid(59dcfd9e650bf4a40acfde7796580b82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Left Up Sword_Battle Attack5.png using Guid(59dcfd9e650bf4a40acfde7796580b82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97f5d992c2579b765e900a4c98872c07') in 0.018152 seconds
+  Import took 0.026088 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000227 seconds.
+  path: Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Left Down Sword_Battle Attack6.png
+  artifactKey: Guid(935ee8235ad16774d922fb40674b4111) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Left Down Sword_Battle Attack6.png using Guid(935ee8235ad16774d922fb40674b4111) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6796a714e6137f49b111366c201c40f') in 0.021585 seconds
+  Import took 0.029586 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000256 seconds.
+  path: Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Left Up Sword_Battle Attack2.png
+  artifactKey: Guid(6d3b59a513e32bd4b9e31f95ff4bc3e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Left Up Sword_Battle Attack2.png using Guid(6d3b59a513e32bd4b9e31f95ff4bc3e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '371b7732555c088792624e23080d3913') in 0.017007 seconds
+  Import took 0.026170 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000273 seconds.
+  path: Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Vertical Down Sword_Battle Attack1.png
+  artifactKey: Guid(8ab13740771a2ab47b9367aa9f37adc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Vertical Down Sword_Battle Attack1.png using Guid(8ab13740771a2ab47b9367aa9f37adc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad88c80c5820602c1968bf814fec32bc') in 0.015227 seconds
+  Import took 0.024870 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000252 seconds.
+  path: Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Vertical Up Sword_Battle Attack2.png
+  artifactKey: Guid(99da41ddaf7c35f4e91d76d6254483db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Vertical Up Sword_Battle Attack2.png using Guid(99da41ddaf7c35f4e91d76d6254483db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89398fcabbce179e11dd80b80284b3ce') in 0.025187 seconds
+  Import took 0.035118 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000246 seconds.
+  path: Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Left Up Sword_Battle Attack1.png
+  artifactKey: Guid(b8945908678e39d44b48db7f21eba155) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Left Up Sword_Battle Attack1.png using Guid(b8945908678e39d44b48db7f21eba155) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30fc1b7f4675584b2ae74ea67b43b005') in 0.019846 seconds
+  Import took 0.029213 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000336 seconds.
+  path: Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Vertical Down Sword_Battle Attack4.png
+  artifactKey: Guid(a190a583dc0d9c540899df4da89179d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Vertical Down Sword_Battle Attack4.png using Guid(a190a583dc0d9c540899df4da89179d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c271d823752f58deffde661a5edd5db') in 0.021434 seconds
+  Import took 0.031356 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 118.478550 seconds.
+  path: Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-LightItalic.ttf
+  artifactKey: Guid(5e63515167650a541b309ba3bfd4db3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-LightItalic.ttf using Guid(5e63515167650a541b309ba3bfd4db3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5498a94b478615b4568d730811575ae4') in 0.073121 seconds
+  Import took 0.084708 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000233 seconds.
+  path: Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Thin.ttf
+  artifactKey: Guid(19a9abb883540be48b75b951a927ae03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Thin.ttf using Guid(19a9abb883540be48b75b951a927ae03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7329c63dec99b635e37d496bfc95ac0c') in 0.034318 seconds
+  Import took 0.043065 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000229 seconds.
+  path: Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-BlackItalic.ttf
+  artifactKey: Guid(f95147a9bab9fe649b8070170fa7ebd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-BlackItalic.ttf using Guid(f95147a9bab9fe649b8070170fa7ebd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ccc07140b85a04cc898434e153069ca2') in 0.038535 seconds
+  Import took 0.046541 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000224 seconds.
+  path: Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-MediumItalic.ttf
+  artifactKey: Guid(d93c1bc57fdf1ac4dad1bf04fac05464) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-MediumItalic.ttf using Guid(d93c1bc57fdf1ac4dad1bf04fac05464) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c503f2c910e5e635e024e9fb4ea71456') in 0.033954 seconds
+  Import took 0.045283 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000237 seconds.
+  path: Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Bold.ttf
+  artifactKey: Guid(3750c318f40cab44a97d3a81beaefeb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Bold.ttf using Guid(3750c318f40cab44a97d3a81beaefeb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e487e17ba1a9425482662f3a588f6e4d') in 0.037750 seconds
+  Import took 0.046660 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000251 seconds.
+  path: Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Italic.ttf
+  artifactKey: Guid(c839255fc8f6b4b4d90bf8c1af9f9bd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Italic.ttf using Guid(c839255fc8f6b4b4d90bf8c1af9f9bd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c025c37d879697dfca19b1b025f27a07') in 0.039717 seconds
+  Import took 0.052051 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000128 seconds.
+  path: Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-ThinItalic.ttf
+  artifactKey: Guid(b2ea3b3f1765e544b9eb5bd1a93a91ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-ThinItalic.ttf using Guid(b2ea3b3f1765e544b9eb5bd1a93a91ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b96a8ee28bcf78105112a5a7acd6313') in 0.056909 seconds
+  Import took 0.068182 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000282 seconds.
+  path: Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Black.ttf
+  artifactKey: Guid(1062c701058745940ae5dca6219c64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Black.ttf using Guid(1062c701058745940ae5dca6219c64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd235a1d07ef88aa8033bbecb5f55da44') in 0.035640 seconds
+  Import took 0.044245 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000227 seconds.
+  path: Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Regular.ttf
+  artifactKey: Guid(30dc370b164eefc43b95744fc796dad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Regular.ttf using Guid(30dc370b164eefc43b95744fc796dad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20de00140bd46a6c6d6a067faf708390') in 0.037159 seconds
+  Import took 0.045642 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000241 seconds.
+  path: Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Medium.ttf
+  artifactKey: Guid(a51a3aebb43ac044989270407476b208) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Medium.ttf using Guid(a51a3aebb43ac044989270407476b208) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea312033825f362c4a6cd837fc445669') in 0.040177 seconds
+  Import took 0.047956 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000231 seconds.
+  path: Packages/com.unity.render-pipelines.core/Runtime/Debugging/Prefabs/Fonts/Perfect DOS VGA 437.ttf
+  artifactKey: Guid(74a5091d8707f334b9a5c31ef71a64ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.core/Runtime/Debugging/Prefabs/Fonts/Perfect DOS VGA 437.ttf using Guid(74a5091d8707f334b9a5c31ef71a64ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd846385ed076364985efc7830db19e04') in 0.033744 seconds
+  Import took 0.042916 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000212 seconds.
+  path: Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-BoldItalic.ttf
+  artifactKey: Guid(dfb97a9307a577a41bcacba34b9a7e32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-BoldItalic.ttf using Guid(dfb97a9307a577a41bcacba34b9a7e32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '807896770cddd1dbb88240c2fa420da7') in 0.034419 seconds
+  Import took 0.042568 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000237 seconds.
+  path: Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Light.ttf
+  artifactKey: Guid(2a29e27936eb547458f646f71125b264) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Light.ttf using Guid(2a29e27936eb547458f646f71125b264) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83b45d478b6e4d5f72584cf7e58b438f') in 0.035413 seconds
+  Import took 0.045090 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 91.013788 seconds.
+  path: Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Left Down Sword_Battle Attack1.png
+  artifactKey: Guid(b1466baba6e5ec345b471309312e2fad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Left Down Sword_Battle Attack1.png using Guid(b1466baba6e5ec345b471309312e2fad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1661ef2a18ce22859c5a61af7f9c1343') in 0.014270 seconds
+  Import took 0.023249 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.838774 seconds.
+  path: Assets/FunkyCode/SmartUtilities2D/Resources/Textures/LegacyLineTexture.png
+  artifactKey: Guid(f207d6e9e67570648bf85329825c910c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FunkyCode/SmartUtilities2D/Resources/Textures/LegacyLineTexture.png using Guid(f207d6e9e67570648bf85329825c910c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4758bfeda978c1c50d0c33b927ff382a') in 0.074911 seconds
+  Import took 0.084907 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000249 seconds.
+  path: Assets/Gizmos/light_v2.png
+  artifactKey: Guid(63cc7e7f6567106488f5d5d30d8b75fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gizmos/light_v2.png using Guid(63cc7e7f6567106488f5d5d30d8b75fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec2a49abb97d07a4dd5b3183f6a5623c') in 0.050031 seconds
+  Import took 0.060287 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000247 seconds.
+  path: Assets/FunkyCode/SmartLighting2D/Resources/Textures/shadowblur.png
+  artifactKey: Guid(6745d40e3d8e2024db77634045d4331e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FunkyCode/SmartLighting2D/Resources/Textures/shadowblur.png using Guid(6745d40e3d8e2024db77634045d4331e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e282bc16d8c8c2ba6213dd2d79a71115') in 0.052269 seconds
+  Import took 0.061245 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000433 seconds.
+  path: Assets/FunkyCode/SmartLighting2D/Resources/Gizmos/light_v2.png
+  artifactKey: Guid(152b48bd71db7d442a91fb2b1f5f69f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FunkyCode/SmartLighting2D/Resources/Gizmos/light_v2.png using Guid(152b48bd71db7d442a91fb2b1f5f69f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f1094e216d44e22556f9f6220a68fa0') in 0.033911 seconds
+  Import took 0.051005 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 100.695660 seconds.
+  path: Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Left Down Sword_Battle Attack1.png
+  artifactKey: Guid(b1466baba6e5ec345b471309312e2fad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Left Down Sword_Battle Attack1.png using Guid(b1466baba6e5ec345b471309312e2fad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ff3c2a8c2399e99cde4347cfd7fbed5') in 0.020192 seconds
+  Import took 0.029289 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 580.190451 seconds.
+  path: Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Left Down Sword_Battle Attack4.png
+  artifactKey: Guid(f290d8dfd2176924abbd13b22e5f6650) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Left Down Sword_Battle Attack4.png using Guid(f290d8dfd2176924abbd13b22e5f6650) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f6012a270e60ca684466f6f5fd244c3') in 0.022366 seconds
+  Import took 0.032698 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.806433 seconds.
+  path: Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Left Down Sword_Battle Attack1.png
+  artifactKey: Guid(b1466baba6e5ec345b471309312e2fad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Left Down Sword_Battle Attack1.png using Guid(b1466baba6e5ec345b471309312e2fad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4220011938f6c707729ca8de2e6d6760') in 0.021231 seconds
+  Import took 0.028588 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.004956 seconds.
+  path: Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Left Down Sword_Battle Attack1.png
+  artifactKey: Guid(b1466baba6e5ec345b471309312e2fad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Left Down Sword_Battle Attack1.png using Guid(b1466baba6e5ec345b471309312e2fad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4220011938f6c707729ca8de2e6d6760') in 0.023631 seconds
+  Import took 0.031819 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000215 seconds.
+  path: Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Left Up Sword_Battle Attack6.png
+  artifactKey: Guid(e2a7dfb959f476d4da6527dd0a7d8a9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Left Up Sword_Battle Attack6.png using Guid(e2a7dfb959f476d4da6527dd0a7d8a9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fcc4b0cee04cb1dba7bf35c4e2867e9') in 0.024265 seconds
+  Import took 0.031358 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000228 seconds.
+  path: Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Vertical Up Sword_Battle Attack6.png
+  artifactKey: Guid(3b984c5bbf92ce44f9d2ce65abe88685) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Vertical Up Sword_Battle Attack6.png using Guid(3b984c5bbf92ce44f9d2ce65abe88685) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8990cd7a4015239c360d0056eca32985') in 0.018529 seconds
+  Import took 0.027526 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000234 seconds.
+  path: Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Left Down Sword_Battle Attack2.png
+  artifactKey: Guid(eab47d49694f13a4bbec806f86974f88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Left Down Sword_Battle Attack2.png using Guid(eab47d49694f13a4bbec806f86974f88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89e8095ee66ea8d0f5f13636959ab539') in 0.018635 seconds
+  Import took 0.026059 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000073 seconds.
+  path: Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Vertical Up Sword_Battle Attack5.png
+  artifactKey: Guid(5760c9d5d0508e449badf0c3062a3a63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Vertical Up Sword_Battle Attack5.png using Guid(5760c9d5d0508e449badf0c3062a3a63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6687098f9b74d697352200bb840bcf5') in 0.019605 seconds
+  Import took 0.027948 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000220 seconds.
+  path: Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Left Down Sword_Battle Attack3.png
+  artifactKey: Guid(ea053484a9413404cbfcd46821bc22fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Left Down Sword_Battle Attack3.png using Guid(ea053484a9413404cbfcd46821bc22fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0fa820448b687202924547b112e50518') in 0.014700 seconds
+  Import took 0.022993 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000201 seconds.
+  path: Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Left Up Sword_Battle Attack3.png
+  artifactKey: Guid(9fd2231a1fb2d4d4fb614f8460991cba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Left Up Sword_Battle Attack3.png using Guid(9fd2231a1fb2d4d4fb614f8460991cba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f552883a33924c2225ef5b61cc24e11a') in 0.012923 seconds
+  Import took 0.020622 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000224 seconds.
+  path: Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Left Down Sword_Battle Attack4.png
+  artifactKey: Guid(f290d8dfd2176924abbd13b22e5f6650) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Left Down Sword_Battle Attack4.png using Guid(f290d8dfd2176924abbd13b22e5f6650) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1e11b3f7d14fb8f0b47ff7db52ab68b') in 0.017628 seconds
+  Import took 0.025481 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000261 seconds.
+  path: Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Vertical Down Sword_Battle Attack3.png
+  artifactKey: Guid(2142a9f000990df4dbf24e7bfa42eb68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Vertical Down Sword_Battle Attack3.png using Guid(2142a9f000990df4dbf24e7bfa42eb68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '450b3d8a4330ef6ad2e9519be06d7324') in 0.019495 seconds
+  Import took 0.028689 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000205 seconds.
+  path: Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Left Up Sword_Battle Attack4.png
+  artifactKey: Guid(2481a0e9d520e5f45a468d230e89ea46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Left Up Sword_Battle Attack4.png using Guid(2481a0e9d520e5f45a468d230e89ea46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4ad32fbb9774247cfc31150546db828') in 0.027173 seconds
+  Import took 0.035046 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000234 seconds.
+  path: Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Vertical Down Sword_Battle Attack2.png
+  artifactKey: Guid(c66c99d83446f7744bf7a3def8843cac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Vertical Down Sword_Battle Attack2.png using Guid(c66c99d83446f7744bf7a3def8843cac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fab4d7eafeca932ae2de563adee8af29') in 0.024789 seconds
+  Import took 0.034940 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000484 seconds.
+  path: Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Vertical Up Sword_Battle Attack1.png
+  artifactKey: Guid(20a09d15b4b5e0f4799868fd1415bc62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Vertical Up Sword_Battle Attack1.png using Guid(20a09d15b4b5e0f4799868fd1415bc62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42058af79423e9771c702a55ed00cace') in 0.016865 seconds
+  Import took 0.027799 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000231 seconds.
+  path: Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Vertical Up Sword_Battle Attack4.png
+  artifactKey: Guid(d4e0384cafb000d438d463eaabaf27e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Vertical Up Sword_Battle Attack4.png using Guid(d4e0384cafb000d438d463eaabaf27e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ea536b06262bb285d5054d8d5172254') in 0.014858 seconds
+  Import took 0.023235 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000140 seconds.
+  path: Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Vertical Down Sword_Battle Attack6.png
+  artifactKey: Guid(b49bafd1d1690f6479940654a044885e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Vertical Down Sword_Battle Attack6.png using Guid(b49bafd1d1690f6479940654a044885e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '433f0192d215eb9139a9ff430a45fb5f') in 0.018615 seconds
+  Import took 0.026763 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000232 seconds.
+  path: Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Left Down Sword_Battle Attack5.png
+  artifactKey: Guid(40a3d9b120e63e943a5411f1bd7a9b8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Left Down Sword_Battle Attack5.png using Guid(40a3d9b120e63e943a5411f1bd7a9b8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50b78f78ad4027206acf4b69af0d69f0') in 0.012789 seconds
+  Import took 0.021184 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000071 seconds.
+  path: Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Vertical Down Sword_Battle Attack5.png
+  artifactKey: Guid(869702cd5b688c540a7a36b709118ed1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Vertical Down Sword_Battle Attack5.png using Guid(869702cd5b688c540a7a36b709118ed1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfca386318745fac38695f02df63e0a1') in 0.020149 seconds
+  Import took 0.028057 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000217 seconds.
+  path: Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Vertical Up Sword_Battle Attack3.png
+  artifactKey: Guid(87aa49e2a7317ef41bd033692e16824e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Vertical Up Sword_Battle Attack3.png using Guid(87aa49e2a7317ef41bd033692e16824e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c95b7abb086b9b6b121335a0adab961b') in 0.014496 seconds
+  Import took 0.024493 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000209 seconds.
+  path: Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Left Up Sword_Battle Attack5.png
+  artifactKey: Guid(59dcfd9e650bf4a40acfde7796580b82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Left Up Sword_Battle Attack5.png using Guid(59dcfd9e650bf4a40acfde7796580b82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ccb0fb91b861dc85b0ceb5efc828327') in 0.021185 seconds
+  Import took 0.030070 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000266 seconds.
+  path: Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Left Down Sword_Battle Attack6.png
+  artifactKey: Guid(935ee8235ad16774d922fb40674b4111) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Left Down Sword_Battle Attack6.png using Guid(935ee8235ad16774d922fb40674b4111) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c09667d4d1a7da87292237b01fb2aa4') in 0.014668 seconds
+  Import took 0.023411 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000309 seconds.
+  path: Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Left Up Sword_Battle Attack2.png
+  artifactKey: Guid(6d3b59a513e32bd4b9e31f95ff4bc3e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Left Up Sword_Battle Attack2.png using Guid(6d3b59a513e32bd4b9e31f95ff4bc3e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6cd9417d053aa6b86975561ba2c13d1') in 0.018826 seconds
+  Import took 0.029133 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000236 seconds.
+  path: Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Vertical Down Sword_Battle Attack1.png
+  artifactKey: Guid(8ab13740771a2ab47b9367aa9f37adc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Vertical Down Sword_Battle Attack1.png using Guid(8ab13740771a2ab47b9367aa9f37adc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '357fea2c492d735cc46412db29685e34') in 0.014713 seconds
+  Import took 0.023113 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000378 seconds.
+  path: Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Vertical Up Sword_Battle Attack2.png
+  artifactKey: Guid(99da41ddaf7c35f4e91d76d6254483db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Vertical Up Sword_Battle Attack2.png using Guid(99da41ddaf7c35f4e91d76d6254483db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0455693c34a45f9c1ae687ff244d831e') in 0.016100 seconds
+  Import took 0.024615 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000239 seconds.
+  path: Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Left Up Sword_Battle Attack1.png
+  artifactKey: Guid(b8945908678e39d44b48db7f21eba155) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Left Up Sword_Battle Attack1.png using Guid(b8945908678e39d44b48db7f21eba155) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2401f1569cd933eea9780090c24e83cf') in 0.015233 seconds
+  Import took 0.024123 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000406 seconds.
+  path: Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Vertical Down Sword_Battle Attack4.png
+  artifactKey: Guid(a190a583dc0d9c540899df4da89179d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Vertical Down Sword_Battle Attack4.png using Guid(a190a583dc0d9c540899df4da89179d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd8ef062ab16846cfb5303752aa07b83') in 0.013698 seconds
+  Import took 0.022106 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 396.663180 seconds.
+  path: Assets/Test/Original/Character/Male/Character_Normal_State/Idle_State/Materials
+  artifactKey: Guid(14bfa307039b58e49814fc8b47184c31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test/Original/Character/Male/Character_Normal_State/Idle_State/Materials using Guid(14bfa307039b58e49814fc8b47184c31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b87715e873679bdefb33443ff7a1e92') in 0.013220 seconds
+  Import took 0.023425 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.276556 seconds.
+  path: Assets/Test/Original/Character/Male/Character_Normal_State/Idle_State/Materials/Left Down_Idle1.mat
+  artifactKey: Guid(7f25bf33f970cf142aa61efbb30578bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test/Original/Character/Male/Character_Normal_State/Idle_State/Materials/Left Down_Idle1.mat using Guid(7f25bf33f970cf142aa61efbb30578bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a5344ac769980d2bd063edb0a2e4d81') in 0.034448 seconds
+  Import took 0.047378 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 298.523756 seconds.
+  path: Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Left Down Sword_Battle Attack4.png
+  artifactKey: Guid(f290d8dfd2176924abbd13b22e5f6650) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Left Down Sword_Battle Attack4.png using Guid(f290d8dfd2176924abbd13b22e5f6650) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4ebe5e450299b8227fb6559770fcf58') in 0.020288 seconds
+  Import took 0.029766 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.007059 seconds.
+  path: Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Left Down Sword_Battle Attack4.png
+  artifactKey: Guid(f290d8dfd2176924abbd13b22e5f6650) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Left Down Sword_Battle Attack4.png using Guid(f290d8dfd2176924abbd13b22e5f6650) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4ebe5e450299b8227fb6559770fcf58') in 0.024709 seconds
+  Import took 0.034194 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 24.748282 seconds.
+  path: Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Left Down Sword_Battle Attack4.png
+  artifactKey: Guid(f290d8dfd2176924abbd13b22e5f6650) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Left Down Sword_Battle Attack4.png using Guid(f290d8dfd2176924abbd13b22e5f6650) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ff36f9e3d9ac1db921d6315ab7ededa') in 0.017635 seconds
+  Import took 0.026962 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 40.469971 seconds.
+  path: Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Left Down Sword_Battle Attack4.png
+  artifactKey: Guid(f290d8dfd2176924abbd13b22e5f6650) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Left Down Sword_Battle Attack4.png using Guid(f290d8dfd2176924abbd13b22e5f6650) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2db3b16845d1d942e88b96b33ff850b5') in 0.021240 seconds
+  Import took 0.031567 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 366.568293 seconds.
+  path: Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Left Down Sword_Battle Attack4.png
+  artifactKey: Guid(f290d8dfd2176924abbd13b22e5f6650) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Left Down Sword_Battle Attack4.png using Guid(f290d8dfd2176924abbd13b22e5f6650) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86b97f6360c7bcbfda9c41e42a762a78') in 0.040201 seconds
+  Import took 0.053809 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.022259 seconds.
+  path: Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Left Down Sword_Battle Attack4.png
+  artifactKey: Guid(f290d8dfd2176924abbd13b22e5f6650) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Left Down Sword_Battle Attack4.png using Guid(f290d8dfd2176924abbd13b22e5f6650) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86b97f6360c7bcbfda9c41e42a762a78') in 0.016434 seconds
+  Import took 0.025794 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.551264 seconds.
+  path: Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Left Down Sword_Battle Attack4.png
+  artifactKey: Guid(f290d8dfd2176924abbd13b22e5f6650) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test/Original/Weapon/Male/Melee_Weapon/Sword/Attack/Left Down Sword_Battle Attack4.png using Guid(f290d8dfd2176924abbd13b22e5f6650) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72ca06a60918c486a5f4a730dd8d1255') in 0.022677 seconds
+  Import took 0.036701 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 145.292725 seconds.
+  path: Assets/Animations/Character/Male/Test_Male_Character_Battle_Animation/Test_Male_Attack_Down.anim
+  artifactKey: Guid(ef8d9351cf1e8814a8d8d3370cd2a5c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Character/Male/Test_Male_Character_Battle_Animation/Test_Male_Attack_Down.anim using Guid(ef8d9351cf1e8814a8d8d3370cd2a5c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d557d27a57aa955ade4059bf131c6fd') in 0.021860 seconds
+  Import took 0.029927 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 62.719969 seconds.
+  path: Assets/Animations/Character/Male/Test_Male_Character_Battle_Animation/Test_Male_Character_Normal_Sword_Attack 1.controller
+  artifactKey: Guid(0d84b5ca01a17b24a8e04b18b18125a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Character/Male/Test_Male_Character_Battle_Animation/Test_Male_Character_Normal_Sword_Attack 1.controller using Guid(0d84b5ca01a17b24a8e04b18b18125a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a94b38aa6b60543e5534c3c0dd12f591') in 0.025876 seconds
+  Import took 0.036305 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.966409 seconds.
+  path: Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test_Male_Weaponr_Normal_Sword_Attack.controller
+  artifactKey: Guid(eebf4f452d4502347af0e9e168fc3821) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test_Male_Weaponr_Normal_Sword_Attack.controller using Guid(eebf4f452d4502347af0e9e168fc3821) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d297b3e636e7049162a84a029cec707') in 0.012537 seconds
+  Import took 0.022912 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 22.880063 seconds.
+  path: Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test_Male_Weaponr_Normal_Sword_Attack.controller
+  artifactKey: Guid(0d84b5ca01a17b24a8e04b18b18125a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test_Male_Weaponr_Normal_Sword_Attack.controller using Guid(0d84b5ca01a17b24a8e04b18b18125a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2e68923fdcc3ecaf28cbaaeb77a1e92') in 0.018610 seconds
+  Import took 0.026134 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 55.933552 seconds.
+  path: Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test
+  artifactKey: Guid(f67f55fe0ca545b4cafe722ce6ed9abe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test using Guid(f67f55fe0ca545b4cafe722ce6ed9abe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea9bb7ba629544545e8bbd4624bee93c') in 0.013919 seconds
+  Import took 0.035050 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000897 seconds.
+  path: Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test
+  artifactKey: Guid(f67f55fe0ca545b4cafe722ce6ed9abe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test using Guid(f67f55fe0ca545b4cafe722ce6ed9abe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea9bb7ba629544545e8bbd4624bee93c') in 0.007760 seconds
+  Import took 0.018452 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 22.112875 seconds.
+  path: Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test/Test.controller
+  artifactKey: Guid(bcb81d3f417a8a444b72510923511707) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test/Test.controller using Guid(bcb81d3f417a8a444b72510923511707) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '313b5a05e95d85ba786ad899ba602759') in 0.012950 seconds
+  Import took 0.021600 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.088826 seconds.
+  path: Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test/Test_Sword_Aanimation.controller
+  artifactKey: Guid(bcb81d3f417a8a444b72510923511707) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test/Test_Sword_Aanimation.controller using Guid(bcb81d3f417a8a444b72510923511707) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b113a8e023b721db9fd748e529b51fc') in 0.015834 seconds
+  Import took 0.024064 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 26.271005 seconds.
+  path: Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test/New Animation.anim
+  artifactKey: Guid(cb97a0c82f1e8a243a0ad0b7e8465432) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test/New Animation.anim using Guid(cb97a0c82f1e8a243a0ad0b7e8465432) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f2e39a70b757542aa4b6e18a0c6c756') in 0.028907 seconds
+  Import took 0.074240 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 41.408485 seconds.
+  path: Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test/Test_Male_Weapon_Sword_Attack_Down.anim
+  artifactKey: Guid(cb97a0c82f1e8a243a0ad0b7e8465432) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test/Test_Male_Weapon_Sword_Attack_Down.anim using Guid(cb97a0c82f1e8a243a0ad0b7e8465432) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4f09213fd986db3c2fcb457eacdeee1') in 0.012628 seconds
+  Import took 0.021198 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.727053 seconds.
+  path: Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test/Test_Male_Weapon_Sword_Attack_Down 1.anim
+  artifactKey: Guid(c6a5336c28efa984c8945351fa71add9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test/Test_Male_Weapon_Sword_Attack_Down 1.anim using Guid(c6a5336c28efa984c8945351fa71add9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fecaee9ade5d2c66433d3412c2c0c75') in 0.013346 seconds
+  Import took 0.022917 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.513726 seconds.
+  path: Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test/Test_Male_Weapon_Sword_Attack_Down 2.anim
+  artifactKey: Guid(2fd01dfbef82e854996e243034c78e63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test/Test_Male_Weapon_Sword_Attack_Down 2.anim using Guid(2fd01dfbef82e854996e243034c78e63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4b0363b71398fc9dffde12217def598') in 0.014935 seconds
+  Import took 0.022738 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.522910 seconds.
+  path: Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test/Test_Male_Weapon_Sword_Attack_Down 3.anim
+  artifactKey: Guid(d3f81e5f6b69b534b817af4cc51156b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test/Test_Male_Weapon_Sword_Attack_Down 3.anim using Guid(d3f81e5f6b69b534b817af4cc51156b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '268ffe8ceeb36fc9c1c4611d41dc29f3') in 0.014038 seconds
+  Import took 0.022532 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.603699 seconds.
+  path: Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test/Test_Male_Weapon_Sword_Attack_Down 4.anim
+  artifactKey: Guid(0c8906d5ce61b1743982cc3f7385dff2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test/Test_Male_Weapon_Sword_Attack_Down 4.anim using Guid(0c8906d5ce61b1743982cc3f7385dff2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b1bd853ed284094c13e0dd47b6ec1a0') in 0.013654 seconds
+  Import took 0.022846 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.539801 seconds.
+  path: Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test/Test_Male_Weapon_Sword_Attack_Down 5.anim
+  artifactKey: Guid(38232f027d50c3c43a7f1fa7faa6e18f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test/Test_Male_Weapon_Sword_Attack_Down 5.anim using Guid(38232f027d50c3c43a7f1fa7faa6e18f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5ddf9d35a6fe1159a4a17de9baa43e8') in 0.044295 seconds
+  Import took 0.052275 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.638389 seconds.
+  path: Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test/Test_Male_Weapon_Sword_Attack_Down.anim
+  artifactKey: Guid(cb97a0c82f1e8a243a0ad0b7e8465432) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test/Test_Male_Weapon_Sword_Attack_Down.anim using Guid(cb97a0c82f1e8a243a0ad0b7e8465432) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '214da1e10d452bcff5622187952d01fd') in 0.009427 seconds
+  Import took 0.017881 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.066056 seconds.
+  path: Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test/Test_Male_Weapon_Sword_Attack_Down 1.anim
+  artifactKey: Guid(c6a5336c28efa984c8945351fa71add9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test/Test_Male_Weapon_Sword_Attack_Down 1.anim using Guid(c6a5336c28efa984c8945351fa71add9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cda0037bf4759ef6bf5f91c5e9ee5526') in 0.008056 seconds
+  Import took 0.017091 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.379737 seconds.
+  path: Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test/Test_Male_Weapon_Sword_Attack_Left_Down.anim
+  artifactKey: Guid(c6a5336c28efa984c8945351fa71add9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test/Test_Male_Weapon_Sword_Attack_Left_Down.anim using Guid(c6a5336c28efa984c8945351fa71add9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ad519e1fe7586ccf73f943c89442b0b') in 0.017485 seconds
+  Import took 0.028439 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.232568 seconds.
+  path: Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test/Test_Male_Weapon_Sword_Attack_Down 2.anim
+  artifactKey: Guid(2fd01dfbef82e854996e243034c78e63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test/Test_Male_Weapon_Sword_Attack_Down 2.anim using Guid(2fd01dfbef82e854996e243034c78e63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c8cf3526b0a4a669f15afa59aeba009') in 0.009047 seconds
+  Import took 0.017957 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.335172 seconds.
+  path: Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test/Test_Male_Weapon_Sword_Attack_Right_Down 2.anim
+  artifactKey: Guid(2fd01dfbef82e854996e243034c78e63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test/Test_Male_Weapon_Sword_Attack_Right_Down 2.anim using Guid(2fd01dfbef82e854996e243034c78e63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7aa1d99060c01ed129180994145fe6a6') in 0.014313 seconds
+  Import took 0.023983 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.986297 seconds.
+  path: Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test/Test_Male_Weapon_Sword_Attack_Down 3.anim
+  artifactKey: Guid(d3f81e5f6b69b534b817af4cc51156b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test/Test_Male_Weapon_Sword_Attack_Down 3.anim using Guid(d3f81e5f6b69b534b817af4cc51156b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fb3faadb68e71b1562a09243ab66fca') in 0.008169 seconds
+  Import took 0.016771 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.472373 seconds.
+  path: Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test/Test_Male_Weapon_Sword_Attack_Left_Up.anim
+  artifactKey: Guid(d3f81e5f6b69b534b817af4cc51156b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test/Test_Male_Weapon_Sword_Attack_Left_Up.anim using Guid(d3f81e5f6b69b534b817af4cc51156b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6544fb390f58341170fe9c333e66b2df') in 0.019869 seconds
+  Import took 0.031353 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.486398 seconds.
+  path: Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test/Test_Male_Weapon_Sword_Attack_Right_Down.anim
+  artifactKey: Guid(2fd01dfbef82e854996e243034c78e63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test/Test_Male_Weapon_Sword_Attack_Right_Down.anim using Guid(2fd01dfbef82e854996e243034c78e63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1d42ce3d1077fe70b096cc96e713937') in 0.018874 seconds
+  Import took 0.030300 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.169034 seconds.
+  path: Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test/Test_Male_Weapon_Sword_Attack_Down 4.anim
+  artifactKey: Guid(0c8906d5ce61b1743982cc3f7385dff2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test/Test_Male_Weapon_Sword_Attack_Down 4.anim using Guid(0c8906d5ce61b1743982cc3f7385dff2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f26be9ab02ed123acdfa7b85059d4c5') in 0.007368 seconds
+  Import took 0.016365 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.425626 seconds.
+  path: Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test/Test_Male_Weapon_Sword_Right_Up.anim
+  artifactKey: Guid(0c8906d5ce61b1743982cc3f7385dff2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test/Test_Male_Weapon_Sword_Right_Up.anim using Guid(0c8906d5ce61b1743982cc3f7385dff2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e11a3021524347a05cae57746e09462f') in 0.022655 seconds
+  Import took 0.041366 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.743434 seconds.
+  path: Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test/Test_Male_Weapon_Sword_Attack_Dow.anim
+  artifactKey: Guid(38232f027d50c3c43a7f1fa7faa6e18f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test/Test_Male_Weapon_Sword_Attack_Dow.anim using Guid(38232f027d50c3c43a7f1fa7faa6e18f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62a75f6df27bd962afb278db6f3c2a50') in 0.013404 seconds
+  Import took 0.022329 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.356418 seconds.
+  path: Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test/Test_Sword_Aanimation.controller
+  artifactKey: Guid(bcb81d3f417a8a444b72510923511707) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test/Test_Sword_Aanimation.controller using Guid(bcb81d3f417a8a444b72510923511707) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8982b87951b881e1c3b822e35419c378') in 0.009722 seconds
+  Import took 0.019280 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 19.252738 seconds.
+  path: Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test/Test_Male_Weapon_Sword_Attack_Up.anim
+  artifactKey: Guid(38232f027d50c3c43a7f1fa7faa6e18f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test/Test_Male_Weapon_Sword_Attack_Up.anim using Guid(38232f027d50c3c43a7f1fa7faa6e18f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b2010d3f195ec5908b3bc8c104d5737') in 0.021357 seconds
+  Import took 0.031370 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4621.090191 seconds.
+  path: Assets/Scripts/Equip/Weapon/Mele_Weapon/MeleWeapon.cs
+  artifactKey: Guid(718b76bc6c0f47b4880436571c9636ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Equip/Weapon/Mele_Weapon/MeleWeapon.cs using Guid(718b76bc6c0f47b4880436571c9636ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f06405eb125baf8f269f78a752f30db8') in 0.100662 seconds
+  Import took 0.157903 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.598598 seconds.
+  path: Assets/Scripts/Equip/Weapon/Mele_Weapon/MeleWeapon
+  artifactKey: Guid(4071ffd1551d4dd4e80bab59aa6f460c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Equip/Weapon/Mele_Weapon/MeleWeapon using Guid(4071ffd1551d4dd4e80bab59aa6f460c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3905c6ea68fe00ecaa77e82ddba65c84') in 0.028660 seconds
+  Import took 0.048840 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.007561 seconds.
+Registered in 0.012174 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.82 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0.81 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.436 seconds
+- Completed reload, in  1.522 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.86 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3716 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 160.5 MB.
+System memory in use after: 160.8 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 4473.
+Total: 4.236000 ms (FindLiveObjects: 0.523400 ms CreateObjectMapping: 0.512100 ms MarkObjects: 3.169700 ms  DeleteObjects: 0.029200 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007371 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.77 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.437 seconds
 Platform modules already initialized, skipping
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Refreshing native plugins compatible for Editor in 0.87 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3715 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 154.3 MB.
-System memory in use after: 154.5 MB.
+Unloading 3716 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 160.6 MB.
+System memory in use after: 160.8 MB.
 
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 4348.
-Total: 3.258700 ms (FindLiveObjects: 0.442100 ms CreateObjectMapping: 0.343900 ms MarkObjects: 2.426800 ms  DeleteObjects: 0.044800 ms)
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 4476.
+Total: 4.745000 ms (FindLiveObjects: 0.393800 ms CreateObjectMapping: 0.176300 ms MarkObjects: 4.152800 ms  DeleteObjects: 0.021100 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.008064 seconds.
+Registered in 0.005691 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.89 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0.84 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.599 seconds
+- Completed reload, in  1.351 seconds
 Platform modules already initialized, skipping
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.89 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0.92 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3715 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 154.3 MB.
-System memory in use after: 154.6 MB.
+Unloading 3716 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 160.6 MB.
+System memory in use after: 160.8 MB.
 
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 4351.
-Total: 3.872700 ms (FindLiveObjects: 0.524700 ms CreateObjectMapping: 0.448500 ms MarkObjects: 2.875400 ms  DeleteObjects: 0.022200 ms)
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 4479.
+Total: 4.075000 ms (FindLiveObjects: 1.016600 ms CreateObjectMapping: 0.452600 ms MarkObjects: 2.572400 ms  DeleteObjects: 0.032600 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 615.713131 seconds.
+  path: Assets/Scripts/Equip/Weapon/Mele_Weapon/MeleWeapon.cs
+  artifactKey: Guid(718b76bc6c0f47b4880436571c9636ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Equip/Weapon/Mele_Weapon/MeleWeapon.cs using Guid(718b76bc6c0f47b4880436571c9636ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87e03f9ef09e5661b459a42874de6447') in 0.014060 seconds
+  Import took 0.021693 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1016.672445 seconds.
+  path: Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test/Test_Male_Weapon_Sword_Attack_Right_Up.anim
+  artifactKey: Guid(0c8906d5ce61b1743982cc3f7385dff2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test/Test_Male_Weapon_Sword_Attack_Right_Up.anim using Guid(0c8906d5ce61b1743982cc3f7385dff2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff836a728c925c019cd1990838e39e92') in 0.085026 seconds
+  Import took 0.099350 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 493.268956 seconds.
+  path: Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test_Male_Weaponr_Normal_Sword_Attack.controller
+  artifactKey: Guid(0d84b5ca01a17b24a8e04b18b18125a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test_Male_Weaponr_Normal_Sword_Attack.controller using Guid(0d84b5ca01a17b24a8e04b18b18125a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ac1a447d2af1e0ada57c533b90e49e2') in 0.023152 seconds
+  Import took 0.048366 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 142.256471 seconds.
+  path: Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test_Male_Weaponr_Sword_Attack.controller
+  artifactKey: Guid(0d84b5ca01a17b24a8e04b18b18125a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test_Male_Weaponr_Sword_Attack.controller using Guid(0d84b5ca01a17b24a8e04b18b18125a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a04e3415ad0e22c4a2d3e5212ac20d22') in 0.016454 seconds
+  Import took 0.025903 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.008814 seconds.
+Registered in 0.005492 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.82 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0.96 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.379 seconds
+- Completed reload, in  1.317 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.27 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3716 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 160.6 MB.
+System memory in use after: 160.8 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 4482.
+Total: 3.685500 ms (FindLiveObjects: 0.560700 ms CreateObjectMapping: 0.458500 ms MarkObjects: 2.646300 ms  DeleteObjects: 0.018600 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005994 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.85 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.388 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.96 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3716 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 160.6 MB.
+System memory in use after: 160.9 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 4485.
+Total: 3.518300 ms (FindLiveObjects: 0.589200 ms CreateObjectMapping: 0.362000 ms MarkObjects: 2.540200 ms  DeleteObjects: 0.026000 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006326 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.84 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.413 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.87 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3716 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 160.6 MB.
+System memory in use after: 160.9 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 4488.
+Total: 4.983500 ms (FindLiveObjects: 0.762000 ms CreateObjectMapping: 0.854300 ms MarkObjects: 3.344700 ms  DeleteObjects: 0.020700 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006382 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.81 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.289 seconds
 Platform modules already initialized, skipping
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Refreshing native plugins compatible for Editor in 0.80 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3715 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 154.3 MB.
-System memory in use after: 154.6 MB.
+Unloading 3716 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 160.6 MB.
+System memory in use after: 160.9 MB.
 
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 4354.
-Total: 2.676100 ms (FindLiveObjects: 0.330800 ms CreateObjectMapping: 0.168100 ms MarkObjects: 2.157100 ms  DeleteObjects: 0.019100 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.007170 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.78 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.355 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.88 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3715 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 154.3 MB.
-System memory in use after: 154.6 MB.
-
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 4357.
-Total: 2.709100 ms (FindLiveObjects: 0.331100 ms CreateObjectMapping: 0.173100 ms MarkObjects: 2.184300 ms  DeleteObjects: 0.019600 ms)
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 4491.
+Total: 3.376300 ms (FindLiveObjects: 0.338800 ms CreateObjectMapping: 0.188300 ms MarkObjects: 2.828100 ms  DeleteObjects: 0.020100 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.007389 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.90 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.450 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.83 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3715 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 154.3 MB.
-System memory in use after: 154.6 MB.
-
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 4360.
-Total: 3.037300 ms (FindLiveObjects: 0.402100 ms CreateObjectMapping: 0.264000 ms MarkObjects: 2.348900 ms  DeleteObjects: 0.021400 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.007589 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 2.89 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.355 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.77 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3715 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 154.4 MB.
-System memory in use after: 154.6 MB.
-
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 4363.
-Total: 3.110400 ms (FindLiveObjects: 0.337900 ms CreateObjectMapping: 0.167600 ms MarkObjects: 2.583900 ms  DeleteObjects: 0.019700 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.007942 seconds.
+Registered in 0.005207 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 0.82 ms, found 1 plugins.
@@ -326,46 +1558,118 @@ Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.366 seconds
+- Completed reload, in  1.368 seconds
 Platform modules already initialized, skipping
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.81 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0.88 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3715 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 154.4 MB.
-System memory in use after: 154.6 MB.
+Unloading 3716 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 160.6 MB.
+System memory in use after: 160.9 MB.
 
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 4366.
-Total: 3.337600 ms (FindLiveObjects: 0.362900 ms CreateObjectMapping: 0.208100 ms MarkObjects: 2.717100 ms  DeleteObjects: 0.047900 ms)
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 4494.
+Total: 3.741200 ms (FindLiveObjects: 0.462500 ms CreateObjectMapping: 0.375100 ms MarkObjects: 2.873300 ms  DeleteObjects: 0.028800 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.007222 seconds.
+Registered in 0.006577 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 2.20 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 1.23 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.882 seconds
+- Completed reload, in  1.722 seconds
 Platform modules already initialized, skipping
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.91 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 1.04 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3715 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 154.4 MB.
-System memory in use after: 154.6 MB.
+Unloading 3716 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 160.6 MB.
+System memory in use after: 160.9 MB.
 
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 4369.
-Total: 3.608200 ms (FindLiveObjects: 0.538500 ms CreateObjectMapping: 0.464500 ms MarkObjects: 2.584700 ms  DeleteObjects: 0.019000 ms)
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 4497.
+Total: 3.465700 ms (FindLiveObjects: 0.465500 ms CreateObjectMapping: 0.389100 ms MarkObjects: 2.592000 ms  DeleteObjects: 0.018000 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.008949 seconds.
+Registered in 0.007955 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.83 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.302 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.86 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3716 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 160.6 MB.
+System memory in use after: 160.9 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 4500.
+Total: 6.153900 ms (FindLiveObjects: 0.669800 ms CreateObjectMapping: 0.578300 ms MarkObjects: 4.871400 ms  DeleteObjects: 0.032400 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 1193.249101 seconds.
+  path: Assets/Animations/Character/Male/Test_Male_Character_Normal_Animation/Test_Male_Character_Normal_Idle.controller
+  artifactKey: Guid(8e429dfbaeb90e645853e3dde8e51ddb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Character/Male/Test_Male_Character_Normal_Animation/Test_Male_Character_Normal_Idle.controller using Guid(8e429dfbaeb90e645853e3dde8e51ddb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49b689dee260b0387e9478e61b349c41') in 0.649722 seconds
+  Import took 0.658392 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.912047 seconds.
+  path: Assets/Animations/Character/Male/Test_Male_Character_Normal_Animation/Test_Male_Character_Normal_Run.controller
+  artifactKey: Guid(85a6043bbc3c4d849b599ee828413d7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Character/Male/Test_Male_Character_Normal_Animation/Test_Male_Character_Normal_Run.controller using Guid(85a6043bbc3c4d849b599ee828413d7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f723b4ce614acb7db1d21a5df893c09f') in 0.065780 seconds
+  Import took 0.077159 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 44.915404 seconds.
+  path: Assets/Animations/Character/Male/Test_Male_Character_Battle_Animation/Test_Male_Character_Battle_Sword_Attack.controller
+  artifactKey: Guid(1fd25cc0a6cc27f418155588b152cef1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Character/Male/Test_Male_Character_Battle_Animation/Test_Male_Character_Battle_Sword_Attack.controller using Guid(1fd25cc0a6cc27f418155588b152cef1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dae9b7497cd0c72684816934b95e2332') in 0.018267 seconds
+  Import took 0.026106 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005426 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.82 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.395 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.86 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3716 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 160.7 MB.
+System memory in use after: 160.9 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 4503.
+Total: 3.556600 ms (FindLiveObjects: 0.456000 ms CreateObjectMapping: 0.408600 ms MarkObjects: 2.660000 ms  DeleteObjects: 0.030800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005896 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 0.86 ms, found 1 plugins.
@@ -374,16 +1678,552 @@ Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.788 seconds
+- Completed reload, in  1.391 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.77 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3716 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 160.7 MB.
+System memory in use after: 160.9 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 4506.
+Total: 3.384300 ms (FindLiveObjects: 0.551600 ms CreateObjectMapping: 0.408300 ms MarkObjects: 2.401900 ms  DeleteObjects: 0.020600 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005273 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.95 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.288 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.87 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3716 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 160.7 MB.
+System memory in use after: 160.9 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 4509.
+Total: 3.862600 ms (FindLiveObjects: 0.463500 ms CreateObjectMapping: 0.408900 ms MarkObjects: 2.942400 ms  DeleteObjects: 0.046500 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005210 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.81 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.289 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.88 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3716 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 160.7 MB.
+System memory in use after: 161.0 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 4512.
+Total: 3.056100 ms (FindLiveObjects: 0.339400 ms CreateObjectMapping: 0.163300 ms MarkObjects: 2.517900 ms  DeleteObjects: 0.025200 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006078 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.96 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.295 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.79 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3716 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 160.7 MB.
+System memory in use after: 161.0 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 4515.
+Total: 3.375400 ms (FindLiveObjects: 0.465700 ms CreateObjectMapping: 0.382600 ms MarkObjects: 2.476000 ms  DeleteObjects: 0.049800 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 959.198041 seconds.
+  path: Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test/Test_Male_Weapon_Sword_Attack_Down 1.anim
+  artifactKey: Guid(32574a198eab9044fb42bfc69574777c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test/Test_Male_Weapon_Sword_Attack_Down 1.anim using Guid(32574a198eab9044fb42bfc69574777c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14fbe63736f61182a98389d205d903fd') in 0.027279 seconds
+  Import took 0.036722 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000956 seconds.
+  path: Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test/Test_Male_Weapon_Sword_Attack_Down 1.anim
+  artifactKey: Guid(32574a198eab9044fb42bfc69574777c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test/Test_Male_Weapon_Sword_Attack_Down 1.anim using Guid(32574a198eab9044fb42bfc69574777c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14fbe63736f61182a98389d205d903fd') in 0.007000 seconds
+  Import took 0.014642 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 50.818772 seconds.
+  path: Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test/Test_Male_Weapon_Sword_Battle_Idle_Down.anim
+  artifactKey: Guid(32574a198eab9044fb42bfc69574777c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test/Test_Male_Weapon_Sword_Battle_Idle_Down.anim using Guid(32574a198eab9044fb42bfc69574777c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66df9d772a3b98cb97fc7da3a5e1fb3e') in 0.024552 seconds
+  Import took 0.039589 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.156129 seconds.
+  path: Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test/Test_Male_Weapon_Sword_Attack_Down.anim
+  artifactKey: Guid(cb97a0c82f1e8a243a0ad0b7e8465432) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test/Test_Male_Weapon_Sword_Attack_Down.anim using Guid(cb97a0c82f1e8a243a0ad0b7e8465432) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3381a2458b6c0a4bb1eb72d7334e3768') in 0.009145 seconds
+  Import took 0.018156 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.915045 seconds.
+  path: Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test/Test_Male_Weapon_Sword_Attack_Left_Down 1.anim
+  artifactKey: Guid(16a8f03420d118946bdb2258eea2e7f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test/Test_Male_Weapon_Sword_Attack_Left_Down 1.anim using Guid(16a8f03420d118946bdb2258eea2e7f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9523fa1aa54f56e0a9f588fa4a73ef4a') in 0.034191 seconds
+  Import took 0.045212 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.855338 seconds.
+  path: Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test/Test_Male_Weapon_Sword_Battle_Idle_Left_Down 1.anim
+  artifactKey: Guid(16a8f03420d118946bdb2258eea2e7f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test/Test_Male_Weapon_Sword_Battle_Idle_Left_Down 1.anim using Guid(16a8f03420d118946bdb2258eea2e7f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b819ca4fbbcf536463d2fb678805b560') in 0.050178 seconds
+  Import took 0.060828 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 20.604800 seconds.
+  path: Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test/Test_Male_Weapon_Sword_Attack_Left_Down.anim
+  artifactKey: Guid(c6a5336c28efa984c8945351fa71add9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test/Test_Male_Weapon_Sword_Attack_Left_Down.anim using Guid(c6a5336c28efa984c8945351fa71add9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a68b849f04e7913e1c0530110c20a7bc') in 0.018222 seconds
+  Import took 0.026565 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 32.265658 seconds.
+  path: Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test/Test_Male_Weapon_Sword_Attack_Left_Up 1.anim
+  artifactKey: Guid(889aea9e0b1b6364687ef1aa86d25d44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test/Test_Male_Weapon_Sword_Attack_Left_Up 1.anim using Guid(889aea9e0b1b6364687ef1aa86d25d44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca467ce286819d23cae66f57256a2c40') in 0.018377 seconds
+  Import took 0.029836 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002976 seconds.
+  path: Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test/Test_Male_Weapon_Sword_Attack_Left_Up 1.anim
+  artifactKey: Guid(889aea9e0b1b6364687ef1aa86d25d44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test/Test_Male_Weapon_Sword_Attack_Left_Up 1.anim using Guid(889aea9e0b1b6364687ef1aa86d25d44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca467ce286819d23cae66f57256a2c40') in 0.013695 seconds
+  Import took 0.022443 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.024652 seconds.
+  path: Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test/Test_Male_Weapon_Sword_Attack_Left_Up.anim
+  artifactKey: Guid(d3f81e5f6b69b534b817af4cc51156b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test/Test_Male_Weapon_Sword_Attack_Left_Up.anim using Guid(d3f81e5f6b69b534b817af4cc51156b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fca39e860780062ef4b5cf16f3327a0') in 0.015102 seconds
+  Import took 0.028905 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001948 seconds.
+  path: Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test/Test_Male_Weapon_Sword_Attack_Left_Up.anim
+  artifactKey: Guid(d3f81e5f6b69b534b817af4cc51156b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test/Test_Male_Weapon_Sword_Attack_Left_Up.anim using Guid(d3f81e5f6b69b534b817af4cc51156b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fca39e860780062ef4b5cf16f3327a0') in 0.009418 seconds
+  Import took 0.020243 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.203670 seconds.
+  path: Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test/Test_Male_Weapon_Sword_Battle_Idle_Left_Up.anim
+  artifactKey: Guid(889aea9e0b1b6364687ef1aa86d25d44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test/Test_Male_Weapon_Sword_Battle_Idle_Left_Up.anim using Guid(889aea9e0b1b6364687ef1aa86d25d44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '361ac2a1bb0e861d014caf957ed640a3') in 0.028484 seconds
+  Import took 0.036809 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.103500 seconds.
+  path: Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test/Test_Male_Weapon_Sword_Attack_Right_Down 1.anim
+  artifactKey: Guid(8972f91a5d6ab0c40b74d2c7d5f055ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test/Test_Male_Weapon_Sword_Attack_Right_Down 1.anim using Guid(8972f91a5d6ab0c40b74d2c7d5f055ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa026d6d93cf41c5e006411d2d40fd7a') in 0.017690 seconds
+  Import took 0.061224 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.824395 seconds.
+  path: Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test/Test_Male_Weapon_Sword_Attack_Right_Down.anim
+  artifactKey: Guid(2fd01dfbef82e854996e243034c78e63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test/Test_Male_Weapon_Sword_Attack_Right_Down.anim using Guid(2fd01dfbef82e854996e243034c78e63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd119aa453b82e87a07d750b1a32280f') in 0.016554 seconds
+  Import took 0.027379 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.037978 seconds.
+  path: Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test/Test_Male_Weapon_Sword_Battle_Idle_Right_Down.anim
+  artifactKey: Guid(8972f91a5d6ab0c40b74d2c7d5f055ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test/Test_Male_Weapon_Sword_Battle_Idle_Right_Down.anim using Guid(8972f91a5d6ab0c40b74d2c7d5f055ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40424c4adc18740fa5944fa6952073cd') in 0.023542 seconds
+  Import took 0.033857 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.874210 seconds.
+  path: Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test/Test_Male_Weapon_Sword_Attack_Right_Up 1.anim
+  artifactKey: Guid(b8fff52eb1503bc45888488fdb49e8e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test/Test_Male_Weapon_Sword_Attack_Right_Up 1.anim using Guid(b8fff52eb1503bc45888488fdb49e8e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47e1cc17162e142d7e7ffee188cc94ff') in 0.020117 seconds
+  Import took 0.029038 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.467785 seconds.
+  path: Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test/Test_Male_Weapon_Sword_Battle_Idle_Right_Up.anim
+  artifactKey: Guid(b8fff52eb1503bc45888488fdb49e8e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test/Test_Male_Weapon_Sword_Battle_Idle_Right_Up.anim using Guid(b8fff52eb1503bc45888488fdb49e8e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '062737ced5f5a993fe7aa11011319641') in 0.025125 seconds
+  Import took 0.035778 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.745943 seconds.
+  path: Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test/Test_Male_Weapon_Sword_Attack_Right_Up.anim
+  artifactKey: Guid(0c8906d5ce61b1743982cc3f7385dff2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test/Test_Male_Weapon_Sword_Attack_Right_Up.anim using Guid(0c8906d5ce61b1743982cc3f7385dff2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8994a4545f29f05dc570a226c5b002dc') in 0.016804 seconds
+  Import took 0.027317 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.149625 seconds.
+  path: Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test/Test_Male_Weapon_Sword_Attack_Up 1.anim
+  artifactKey: Guid(5dea09bd06f740244bedfb3b3c1b65fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test/Test_Male_Weapon_Sword_Attack_Up 1.anim using Guid(5dea09bd06f740244bedfb3b3c1b65fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae74b158fcc1ce2a4cf2801d5a727967') in 0.013828 seconds
+  Import took 0.023732 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.043139 seconds.
+  path: Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test/Test_Male_Weapon_Sword_Battle_Idle_Up.anim
+  artifactKey: Guid(5dea09bd06f740244bedfb3b3c1b65fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test/Test_Male_Weapon_Sword_Battle_Idle_Up.anim using Guid(5dea09bd06f740244bedfb3b3c1b65fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b96e6bca5f47202c30a74f90ce425afb') in 0.044555 seconds
+  Import took 0.063238 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.889605 seconds.
+  path: Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test/Test_Male_Weapon_Sword_Attack_Up.anim
+  artifactKey: Guid(38232f027d50c3c43a7f1fa7faa6e18f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test/Test_Male_Weapon_Sword_Attack_Up.anim using Guid(38232f027d50c3c43a7f1fa7faa6e18f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eef27a5ed5ddfae081b6ba01bf400805') in 0.021961 seconds
+  Import took 0.032786 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.102229 seconds.
+  path: Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test/Test_Sword_Aanimation.controller
+  artifactKey: Guid(bcb81d3f417a8a444b72510923511707) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test/Test_Sword_Aanimation.controller using Guid(bcb81d3f417a8a444b72510923511707) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b72406a406cc487e936fdfd3ad021a9') in 0.023439 seconds
+  Import took 0.031211 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 34.518200 seconds.
+  path: Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test/Test_Male_Weapon_Sword_Battle_Idle_Left_Down.anim
+  artifactKey: Guid(16a8f03420d118946bdb2258eea2e7f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test/Test_Male_Weapon_Sword_Battle_Idle_Left_Down.anim using Guid(16a8f03420d118946bdb2258eea2e7f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7c946b70d075bdf2931aa2adf4c8864') in 0.019455 seconds
+  Import took 0.051686 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 97.127954 seconds.
+  path: Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test_Male_Weaponr_Sword_Attack.controller
+  artifactKey: Guid(0d84b5ca01a17b24a8e04b18b18125a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test_Male_Weaponr_Sword_Attack.controller using Guid(0d84b5ca01a17b24a8e04b18b18125a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d163629978916322d67e14d921e56b6') in 0.024694 seconds
+  Import took 0.032583 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.571656 seconds.
+  path: Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test_Male_Weaponr_Sword_Attack 1.controller
+  artifactKey: Guid(c66ef5ec9314f4d4f907feaf8a527662) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test_Male_Weaponr_Sword_Attack 1.controller using Guid(c66ef5ec9314f4d4f907feaf8a527662) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b26306eab2674fc8c81d4b2fd2960209') in 0.022837 seconds
+  Import took 0.034776 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.174818 seconds.
+  path: Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test_Male_Weaponr_Sword_Battle_Idle.controller
+  artifactKey: Guid(c66ef5ec9314f4d4f907feaf8a527662) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test_Male_Weaponr_Sword_Battle_Idle.controller using Guid(c66ef5ec9314f4d4f907feaf8a527662) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b7fc195561ca1c8aa17ef0951fddb15') in 0.018614 seconds
+  Import took 0.029428 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 49.592083 seconds.
+  path: Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test_Male_Weaponr_Sword_Attack.controller
+  artifactKey: Guid(0d84b5ca01a17b24a8e04b18b18125a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test_Male_Weaponr_Sword_Attack.controller using Guid(0d84b5ca01a17b24a8e04b18b18125a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3dc83ce7885cc23adae088ae04bc2f12') in 0.013659 seconds
+  Import took 0.023671 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005563 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.77 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.372 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.94 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3716 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 160.7 MB.
+System memory in use after: 161.0 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 4518.
+Total: 2.862900 ms (FindLiveObjects: 0.370300 ms CreateObjectMapping: 0.172000 ms MarkObjects: 2.301700 ms  DeleteObjects: 0.017600 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005810 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.73 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.382 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.77 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3716 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 160.7 MB.
+System memory in use after: 161.0 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 4521.
+Total: 2.694100 ms (FindLiveObjects: 0.345500 ms CreateObjectMapping: 0.167000 ms MarkObjects: 2.165100 ms  DeleteObjects: 0.015700 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005337 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.81 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.397 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.90 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3716 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 160.7 MB.
+System memory in use after: 161.0 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 4524.
+Total: 2.958500 ms (FindLiveObjects: 0.339200 ms CreateObjectMapping: 0.164400 ms MarkObjects: 2.435700 ms  DeleteObjects: 0.018200 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.010062 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.87 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.145 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.25 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3716 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 160.7 MB.
+System memory in use after: 161.0 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 4527.
+Total: 5.940000 ms (FindLiveObjects: 0.528300 ms CreateObjectMapping: 0.432700 ms MarkObjects: 4.956500 ms  DeleteObjects: 0.020600 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009408 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.80 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.430 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.00 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3716 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 160.8 MB.
+System memory in use after: 161.0 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 4530.
+Total: 4.639000 ms (FindLiveObjects: 0.356600 ms CreateObjectMapping: 0.173000 ms MarkObjects: 4.086600 ms  DeleteObjects: 0.021300 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005310 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.77 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.488 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.41 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3716 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 160.8 MB.
+System memory in use after: 161.0 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 4533.
+Total: 3.482500 ms (FindLiveObjects: 0.436000 ms CreateObjectMapping: 0.170900 ms MarkObjects: 2.850200 ms  DeleteObjects: 0.024000 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005536 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.04 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.469 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.88 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3716 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 160.8 MB.
+System memory in use after: 161.0 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 4536.
+Total: 3.375300 ms (FindLiveObjects: 0.350900 ms CreateObjectMapping: 0.172700 ms MarkObjects: 2.832500 ms  DeleteObjects: 0.017900 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007428 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.95 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.350 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.03 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3716 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 160.8 MB.
+System memory in use after: 161.0 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 4539.
+Total: 5.141600 ms (FindLiveObjects: 0.876400 ms CreateObjectMapping: 1.110800 ms MarkObjects: 3.131100 ms  DeleteObjects: 0.021900 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.016135 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.08 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.096 seconds
 Platform modules already initialized, skipping
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Refreshing native plugins compatible for Editor in 1.08 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3715 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 154.4 MB.
-System memory in use after: 154.6 MB.
+Unloading 3716 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 160.8 MB.
+System memory in use after: 161.0 MB.
 
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 4372.
-Total: 3.465700 ms (FindLiveObjects: 0.370100 ms CreateObjectMapping: 0.440800 ms MarkObjects: 2.635800 ms  DeleteObjects: 0.017500 ms)
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 4542.
+Total: 4.854000 ms (FindLiveObjects: 0.758500 ms CreateObjectMapping: 0.394000 ms MarkObjects: 3.678000 ms  DeleteObjects: 0.021400 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006130 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.63 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.390 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.82 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3716 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 160.8 MB.
+System memory in use after: 161.0 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 4545.
+Total: 3.165000 ms (FindLiveObjects: 0.554900 ms CreateObjectMapping: 0.319300 ms MarkObjects: 2.268400 ms  DeleteObjects: 0.020900 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 2622.683180 seconds.
+  path: Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test/Test_Sword_Aanimation.controller
+  artifactKey: Guid(bcb81d3f417a8a444b72510923511707) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Weapon/Test_Male_Weapon_Sword/Test/Test_Sword_Aanimation.controller using Guid(bcb81d3f417a8a444b72510923511707) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46cb249b5e452b75af9a22891240f0d9') in 0.038991 seconds
+  Import took 0.051759 seconds .
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file

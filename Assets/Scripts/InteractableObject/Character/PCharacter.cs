@@ -37,7 +37,7 @@ public class PCharacter : Character
     private void Start()
     {
         //캐릭터 기본 애니메이션 (Idle)
-        MyAnimator.runtimeAnimatorController = IdleState.CharacterState_AnimatorController;
+        MyAnimator.runtimeAnimatorController = IdleState.AnimatorController_CharacterState;
         //초기 바라보는 방향 설정 필요함. 아래 셋 제대로 안됨.
         //MyAnimator.SetFloat("Movement_X", -0.1f);
         //MyAnimator.SetFloat("Movement_Y", -0.1f);

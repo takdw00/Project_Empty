@@ -308,7 +308,7 @@ public class InputManager : MonoBehaviour
         //가드를 취소한다.
         //이동을 취소한다.
 
-        if(characterManager.Character.IsIdle|| characterManager.Character.IsMove) // 공격 도중 새로운 방향 입력 방지
+        if(characterManager.Character.IsIdle || characterManager.Character.IsMove) // 공격 도중 새로운 방향 입력 방지
         {
             mousePosition = Input.mousePosition;
             mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
@@ -318,6 +318,7 @@ public class InputManager : MonoBehaviour
 
 
             characterManager.Character.IsAttack = true;
+            characterManager.Character.IsIdle = false;
             characterManager.Character.IsGuard = false;
             characterManager.Character.IsMove = false;
 

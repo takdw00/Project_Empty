@@ -11,7 +11,7 @@ public class State_Move : State
 
     public override void Animation()
     {
-        CharacterRef.MyAnimator.runtimeAnimatorController = characterState_AnimatorController;
+        CharacterRef.MyAnimator.runtimeAnimatorController = AnimatorController_CharacterState;
         CharacterRef.MyAnimator.SetFloat("Direction_X", CharacterRef.Move_Direction.x);
         CharacterRef.MyAnimator.SetFloat("Direction_Y", CharacterRef.Move_Direction.y);
     }

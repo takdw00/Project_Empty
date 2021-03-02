@@ -4,79 +4,35 @@ using UnityEngine;
 
 public class State_Attack : State
 {
-
-
-
-
-    #region empty
-    #endregion
-
-
-
-    private void Start()
-    {
-
-
-        #region empty
-        #endregion
-
-
-    }
     public override void Execution()
     {
-        CharacterRef.Weapon_Right.Attack();
+        CharacterRef.Right_Hand.Attack();
     }
 
-    private void MeleeAttack()
+    public override void Animation()
     {
+        CharacterRef.MyAnimator.runtimeAnimatorController = characterState_AnimatorController;
+        CharacterRef.MyAnimator.SetFloat("Direction_X", CharacterRef.Attack_Direction.x);
+        CharacterRef.MyAnimator.SetFloat("Direction_Y", CharacterRef.Attack_Direction.y);
+
+        //공격후 바라보는 방향 재정의
+        CharacterRef.Move_Direction = CharacterRef.Attack_Direction;
+
+        CharacterRef.MyAnimator.speed = CharacterRef.Right_Hand.WeaponSpeed;
 
     }
 
-    //공격 방향 각도 계산
-    float Determine_Direction_Of_Attack(Vector3 movement)
+
+    //애니메이션에서 상태 전환 해줄 함수들
+    public void AttackIng()
     {
-        Vector3 zeroDegreeDirection = new Vector3(1, 0, 0);
-
-
-        float angle = Quaternion.FromToRotation(Vector3.up, zeroDegreeDirection - movement).eulerAngles.z;
-
-        if ((angle < 45 && angle > 315) || angle == 0)
-        {
-            return 0;
-        }
-        if (angle < 90 && angle > 0)
-        {
-            return 45;
-        }
-        if (angle < 135 && angle > 45)
-        {
-            return 90;
-        }
-        if (angle < 180 && angle > 90)
-        {
-            return 135;
-        }
-        if (angle < 225 && angle > 135)
-        {
-            return 180;
-        }
-        if (angle < 270 && angle > 180)
-        {
-            return 225;
-        }
-        if (angle < 315 && angle > 225)
-        {
-            return 270;
-        }
-        if(angle < 360 && angle > 270)
-        {
-            return 315;
-        }
-        else
-        {
-            //어떤 방향에도 속하지 않음. 에러.
-            return 225;
-        }
+        CharacterRef.IsAttack = false;
+        //Debug.Log("캐릭터 공격 중");
     }
+    public void AttackEnd()
+    {
+        CharacterRef.IsIdle = true;
 
+        //Debug.Log("캐릭터 공격 종료");
+    }
 }

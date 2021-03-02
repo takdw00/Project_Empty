@@ -2,17 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class State_Battle_Ready : MonoBehaviour
+public class State_Battle_Ready : State
 {
-    // Start is called before the first frame update
-    void Start()
+    public override void Execution()
     {
-        
+
     }
 
-    // Update is called once per frame
-    void Update()
+    public override void Animation()
     {
-        
+
     }
 }

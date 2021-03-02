@@ -141,8 +141,8 @@ public class Character : InteractableObject
     #region Equip
 
     //Weapon
-    protected Weapon weapon_Right;
-    protected Weapon weapon_Left;
+    protected Weapon right_Hand;
+    protected Weapon left_Hand;
 
     //Armor
     protected Armor armor;
@@ -225,8 +225,8 @@ public class Character : InteractableObject
 
     //Epuip
     ///Weapon
-    public Weapon Weapon_Right { get { return weapon_Right; } set { weapon_Right = value; } }
-    public Weapon Weapon_Left { get { return weapon_Left; }set { weapon_Left = value; } }
+    public Weapon Right_Hand { get { return right_Hand; } set { right_Hand = value; } }
+    public Weapon Left_Hand { get { return left_Hand; }set { left_Hand = value; } }
 
 
     #endregion

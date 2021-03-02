@@ -8,4 +8,9 @@ public class State_Battle_Idle : State
     {
 
     }
+
+    public override void Animation()
+    {
+
+    }
 }

@@ -26,21 +26,31 @@ public class PCharacter : Character
 
 
         ///스탯설정(임시)
-        Now_Speed = 10;
+        Now_Speed = 5;
 
         //Defult state
         CurrentState = IdleState;
+        IsIdle = true;
     }
 
 
     private void Start()
     {
+        //캐릭터 기본 애니메이션 (Idle)
+        MyAnimator.runtimeAnimatorController = IdleState.CharacterState_AnimatorController;
+        //초기 바라보는 방향 설정 필요함. 아래 셋 제대로 안됨.
+        //MyAnimator.SetFloat("Movement_X", -0.1f);
+        //MyAnimator.SetFloat("Movement_Y", -0.1f);
+
         //시작 무기(초기)
-        weapon_Right = transform.Find("Equip").transform.Find("Weapon_Right").transform.Find("PCharacter_Weapon").transform.Find("Melee_Weapon").transform.Find("Sword").transform.Find("Long_Sword").GetComponent<Weapon>();
-        weapon_Right.gameObject.SetActive(true);
+        right_Hand = transform.Find("Equip").transform.Find("Weapon_Right").transform.Find("PCharacter_Weapon").transform.Find("Melee_Weapon").transform.Find("Sword").transform.Find("Long_Sword").GetComponent<Weapon>();
+        right_Hand.gameObject.SetActive(true);
     }
 
-
+    private void FixedUpdate()
+    {
+        CurrentState.Execution();
+    }
 
 
     private void Update()
@@ -57,11 +67,8 @@ public class PCharacter : Character
 
         controller.ControlCommand();
 
-        CurrentState.Execution();
+        CurrentState.Animation();
     }
 
-    private void FixedUpdate()
-    {
-        
-    }
+
 }

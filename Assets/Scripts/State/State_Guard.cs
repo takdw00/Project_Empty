@@ -8,4 +8,8 @@ public class State_Guard : State
     {
 
     }
+    public override void Animation()
+    {
+
+    }
 }

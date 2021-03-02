@@ -147,6 +147,7 @@ public class InputManager : MonoBehaviour
             //누르는 동안 해당 방향으로 이동
             //대기 상태를 취소한다.
             case keyName.Direction:
+                //Invoke("ButtonEvent_Direction_Start", 0.1f);
                 ButtonEvent_Direction_Start();
                 break;
 
@@ -215,7 +216,8 @@ public class InputManager : MonoBehaviour
             //이동을 종료한다.
             //대기 상태를 취소한다.
             case keyName.Direction:
-                ButtonEvent_Direction_End();
+                Invoke("ButtonEvent_Direction_End", 0.1f);
+                //ButtonEvent_Direction_End();
                 break;
 
             //컨트롤 캐릭터 교체
@@ -246,13 +248,22 @@ public class InputManager : MonoBehaviour
         //대기 상태를 취소한다.
         horizontal = Input.GetAxisRaw("Horizontal");
         vertical = Input.GetAxisRaw("Vertical");
+
         characterManager.Character.Move_Direction = new Vector3(horizontal, vertical, 0).normalized;
+
+        characterManager.Character.IsIdle = false;
         characterManager.Character.IsMove = true;
+
         //Debug.Log("이동 버튼 눌리는중");
     }
+
     void ButtonEvent_Direction_End()
     {
+        characterManager.Character.Move_Direction = new Vector3(horizontal, vertical, 0).normalized;
+
+        characterManager.Character.IsIdle = true;
         characterManager.Character.IsMove = false;
+
         //Debug.Log("이동 버튼 뗏다.");
     }
     void ButtonEvent_Dodge()
@@ -297,18 +308,21 @@ public class InputManager : MonoBehaviour
         //가드를 취소한다.
         //이동을 취소한다.
 
-        mousePosition = Input.mousePosition;
-        mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
+        if(characterManager.Character.IsIdle|| characterManager.Character.IsMove) // 공격 도중 새로운 방향 입력 방지
+        {
+            mousePosition = Input.mousePosition;
+            mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
 
-        characterManager.Character.Attack_Direction = mousePosition- characterManager.Character.transform.position;
-        characterManager.Character.Attack_Direction = characterManager.Character.Attack_Direction.normalized;
-        
-        
-        characterManager.Character.IsAttack = true;
-        characterManager.Character.IsGuard = false;
-        characterManager.Character.IsMove = false;
+            characterManager.Character.Attack_Direction = mousePosition - characterManager.Character.transform.position;
+            characterManager.Character.Attack_Direction = characterManager.Character.Attack_Direction.normalized;
 
-        Debug.Log("공격 방향" + characterManager.Character.Attack_Direction);
+
+            characterManager.Character.IsAttack = true;
+            characterManager.Character.IsGuard = false;
+            characterManager.Character.IsMove = false;
+
+            Debug.Log("공격 방향" + characterManager.Character.Attack_Direction);
+        }
     }
     void ButtonEvent_SkillUse_1()
     {

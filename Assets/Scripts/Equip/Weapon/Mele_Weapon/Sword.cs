@@ -9,6 +9,13 @@ public class Sword : Weapon
     [SerializeField] float back_Delay = 2.0f;
     float now_Back_Delay;
 
+
+
+
+
+
+
+
     private void OnTriggerEnter(Collider other)
     {
         InteractableObject hitObject;
@@ -21,9 +28,9 @@ public class Sword : Weapon
             Debug.Log("Sword Hit object : " + hitObject.gameObject.name);
         }
     }
-    override public void Attack()
+    override public void Attack() //1
     {
-        Debug.Log("¼±µô");
+        //Debug.Log("¼±µô");
         now_Front_Delay += Time.deltaTime;
         if (now_Front_Delay > front_Delay)
         {
@@ -31,7 +38,7 @@ public class Sword : Weapon
             CharacterRef.IsIdle = false;
             gameObject.GetComponent<MeshCollider>().enabled = true;
             now_Back_Delay += Time.deltaTime;
-            Debug.Log("°ø°Ý");
+            //Debug.Log("°ø°Ý");
         }
         if (now_Back_Delay > back_Delay)
         {
@@ -40,7 +47,11 @@ public class Sword : Weapon
             now_Back_Delay = 0;
             CharacterRef.IsAttack = false;
             CharacterRef.IsBattle_Idle = true;
-            Debug.Log("ÈÄµô");
+            //Debug.Log("ÈÄµô");
         }
     }
+    //override public void Attack() //2
+    //{
+    //    //CharacterRef.MyAnimator.runtimeAnimatorController =;
+    //}
 }

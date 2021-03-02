@@ -6,4 +6,8 @@ public class State_Death : State
     {
 
     }
+    public override void Animation()
+    {
+
+    }
 }

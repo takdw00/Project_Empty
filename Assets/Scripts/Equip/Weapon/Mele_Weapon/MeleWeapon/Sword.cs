@@ -17,18 +17,7 @@ public class Sword : MeleWeapon
 
 
 
-    private void OnTriggerEnter(Collider other)
-    {
-        InteractableObject hitObject;
-        
-        
-        if(hitObject = other.gameObject.GetComponent<InteractableObject>())
-        {
-            hitObject.IsHit = true;
 
-            Debug.Log("Sword Hit object : " + hitObject.gameObject.name);
-        }
-    }
     //override public void Attack() //1
     //{
     //    //Debug.Log("¼±µô");

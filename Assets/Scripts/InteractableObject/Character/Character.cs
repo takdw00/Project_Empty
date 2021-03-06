@@ -10,8 +10,12 @@ public class Character : InteractableObject
     private Vector3 move_Direction;
     private Vector3 attack_Direction;
 
+    //출력 애니메이션 클립 번호
+    public float AnimationNumber;
+
     //공격 대상
     [SerializeField] LayerMask enemy_LayerMask;
+
 
 
     #region Character Stat Variables
@@ -157,6 +161,7 @@ public class Character : InteractableObject
 
     //애니메이션
     public Animator MyAnimator { get { return myAnimator; } set { myAnimator = value; } }
+
 
     //캐릭터 이름
 

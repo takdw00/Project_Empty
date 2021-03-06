@@ -619,6 +619,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8722538041074236094}
+  - component: {fileID: 6043840626225631386}
   - component: {fileID: 4378159010634486797}
   m_Layer: 0
   m_Name: Long_Sword
@@ -641,6 +642,25 @@ Transform:
   m_Father: {fileID: 8722538041309386635}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &6043840626225631386
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8722538041074236095}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &4378159010634486797
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -653,6 +673,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8cc05eddc2e4a843bc6514260221702, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  weaponDamage: 0
+  weaponSpeed: 0
+  AinmationController_Battle_Idle: {fileID: 0}
+  AinmationController_Battle_Ready: {fileID: 0}
+  AinmationController_Battle_Run: {fileID: 0}
+  AinmationController_Battle_Walk: {fileID: 0}
+  AinmationController_Attack: {fileID: 0}
+  AinmationController_Dodge: {fileID: 0}
+  AinmationController_Guard: {fileID: 0}
+  AinmationController_Pary: {fileID: 0}
+  AinmationController_Hit: {fileID: 0}
+  hitbox_Down: {fileID: 0}
+  hitbox_Left_Down: {fileID: 0}
+  hitbox_Left_Up: {fileID: 0}
+  hitbox_Right_Down: {fileID: 0}
+  hitbox_Right_Up: {fileID: 0}
+  hitbox_Up: {fileID: 0}
   front_Delay: 0.2
   back_Delay: 0.4
 --- !u!1 &8722538041288047186

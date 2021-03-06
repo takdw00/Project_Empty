@@ -93,7 +93,7 @@ public class InputManager : MonoBehaviour
             //입력 감지
             foreach (var dic in keyDictionary)
             {
-                if(Input.GetKeyDown(dic.Key))
+                if (Input.GetKeyDown(dic.Key))
                 {
                     ButtonActionDown(dic.Value);
                     //Debug.Log(dic.Key + " 키 눌렀다");
@@ -107,7 +107,7 @@ public class InputManager : MonoBehaviour
                     //Debug.Log(dic.Key + " 키 누르는 중");
 
                     ButtonAction(dic.Value);
-                    
+
                 }
             }
         }
@@ -246,15 +246,29 @@ public class InputManager : MonoBehaviour
         //이동
         //누르는 동안 해당 방향으로 이동
         //대기 상태를 취소한다.
+
+        //if (!characterManager.Character.IsAttack)
+        //{
+
         horizontal = Input.GetAxisRaw("Horizontal");
         vertical = Input.GetAxisRaw("Vertical");
 
+
         characterManager.Character.Move_Direction = new Vector3(horizontal, vertical, 0).normalized;
+        
+        //양방향 입력으로 인한 방향값 (0,0) 에 대한 예외처리
+        //if(characterManager.Character.Move_Direction.x==0 && characterManager.Character.Move_Direction.y == 0)
+        //{
+        //    characterManager.Character.IsIdle = true;
+        //    return;
+        //}
+
 
         characterManager.Character.IsIdle = false;
         characterManager.Character.IsMove = true;
 
         //Debug.Log("이동 버튼 눌리는중");
+        //}
     }
 
     void ButtonEvent_Direction_End()
@@ -308,21 +322,23 @@ public class InputManager : MonoBehaviour
         //가드를 취소한다.
         //이동을 취소한다.
 
-        if(characterManager.Character.IsIdle || characterManager.Character.IsMove) // 공격 도중 새로운 방향 입력 방지
+        if (characterManager.Character.IsIdle || characterManager.Character.IsMove) // 공격 도중 새로운 방향 입력 방지
         {
             mousePosition = Input.mousePosition;
             mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
-
+            mousePosition.z = 0;
             characterManager.Character.Attack_Direction = mousePosition - characterManager.Character.transform.position;
             characterManager.Character.Attack_Direction = characterManager.Character.Attack_Direction.normalized;
 
+
+            characterManager.Character.AnimationNumber = SetParameter(characterManager.Character.Attack_Direction);
 
             characterManager.Character.IsAttack = true;
             characterManager.Character.IsIdle = false;
             characterManager.Character.IsGuard = false;
             characterManager.Character.IsMove = false;
 
-            Debug.Log("공격 방향" + characterManager.Character.Attack_Direction);
+            //Debug.Log("공격 방향" + characterManager.Character.Attack_Direction);
         }
     }
     void ButtonEvent_SkillUse_1()
@@ -354,6 +370,48 @@ public class InputManager : MonoBehaviour
     }
     void ButtonEvent_SelectCharacter_4()
     {
+    }
+
+
+    public virtual float SetParameter(Vector2 direction)
+    {
+        float posX = 0.5f;
+        float posY = 0.866f;
+
+        //Debug.Log(direction);
+
+
+        if (direction.x > -posX && direction.x < posX && direction.y < -posY && direction.y > -1) // Down
+        {
+            //Debug.Log("Down" + direction);
+            return 1;
+        }
+        if (direction.x <= -posX && direction.x >= -1 && direction.y <= 0 && direction.y >= -posY) // Left Dwon
+        {
+            //Debug.Log("Left Dwon" + direction);
+            return 2;
+        }
+        if (direction.x > -1 && direction.x <= -posX && direction.y > 0 && direction.y <= posY) // Left Up
+        {
+            //Debug.Log("Left Up" + direction);
+            return 3;
+        }
+        if (direction.x <= 1 && direction.x >= posX && direction.y >= -posY && direction.y <= 0) // Right Down
+        {
+            //Debug.Log("Right Down" + direction);
+            return 4;
+        }
+        if (direction.x >= posX && direction.x < 1 && direction.y <= posY && direction.y > 0) // Right Up
+        {
+            //Debug.Log("Right Up" + direction);
+            return 5;
+        }
+        if (direction.x > -posX && direction.x < posX && direction.y > posY && direction.y < 1) // Up
+        {
+            //Debug.Log("Up" + direction);
+            return 6;
+        }
+        return 0;
     }
 
 }

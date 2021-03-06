@@ -17,6 +17,7 @@ public class State_Attack : State
         CharacterRef.MyAnimator.speed = CharacterRef.Right_Hand.WeaponSpeed;
 
         CharacterRef.Right_Hand.StateAction(CharacterRef.Right_Hand.AinmationController_Attack, CharacterRef.Attack_Direction, CharacterRef.Right_Hand.WeaponSpeed);
+        CharacterRef.Right_Hand.WeaponEffect.StateEffect(CharacterRef.Right_Hand.WeaponEffect.AinmationController_Attack, CharacterRef.Attack_Direction, CharacterRef.Right_Hand.WeaponSpeed);
 
         //공격후 바라보는 방향 재정의
         CharacterRef.Move_Direction = CharacterRef.Attack_Direction;
@@ -36,5 +37,11 @@ public class State_Attack : State
         CharacterRef.IsIdle = true;
 
         //Debug.Log("캐릭터 공격 종료");
+        
+    }
+
+    public void Sprite_Sorting()
+    {
+        //CharacterRef.GetComponent<SpriteRenderer>().sor
     }
 }

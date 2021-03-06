@@ -7,7 +7,7 @@ public abstract class State : MonoBehaviour
 
     //캐릭터의 해당 상태 애니메이션 컨트롤러
     [SerializeField] protected RuntimeAnimatorController animatorController_CharacterState;
-
+    protected float animation_Speed;
 
 
     public RuntimeAnimatorController AnimatorController_CharacterState { get { return animatorController_CharacterState; } }
@@ -20,4 +20,6 @@ public abstract class State : MonoBehaviour
     public abstract void Execution();
 
     public abstract void Animation();
+
+
 }

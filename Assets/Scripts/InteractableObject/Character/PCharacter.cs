@@ -67,6 +67,8 @@ public class PCharacter : Character
 
         controller.ControlCommand();
 
+
+        //Debug.Log("movedirection "+Move_Direction);
         CurrentState.Animation();
     }
 

@@ -43,7 +43,7 @@ public class PCharacter : Character
         //MyAnimator.SetFloat("Movement_Y", -0.1f);
 
         //시작 무기(초기)
-        right_Hand = transform.Find("Equip").transform.Find("Weapon_Right").transform.Find("PCharacter_Weapon").transform.Find("Melee_Weapon").transform.Find("Sword").transform.Find("Long_Sword").GetComponent<Weapon>();
+        right_Hand = transform.Find("Equip").transform.Find("Weapon_Right").transform.Find("Melee_Weapon").transform.Find("Sword").transform.Find("Long_Sword").GetComponent<Weapon>();
         right_Hand.gameObject.SetActive(true);
     }
 

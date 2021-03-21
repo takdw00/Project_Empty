@@ -50,7 +50,7 @@ public abstract class Weapon : MonoBehaviour
     private void Start()
     {
 
-        characterRef = transform.parent.transform.parent.transform.parent.transform.parent.transform.parent.transform.parent.GetComponent<Character>();
+        characterRef = transform.parent.transform.parent.transform.parent.transform.parent.transform.parent.GetComponent<Character>();
 
         //weaponEffect = transform.Find("Weapon_Effect").gameObject.GetComponent<Effect>();
         

@@ -256,7 +256,7 @@ public class InputManager : MonoBehaviour
 
         characterManager.Character.Move_Direction = new Vector3(horizontal, vertical, 0).normalized;
         
-        //양방향 입력으로 인한 방향값 (0,0) 에 대한 예외처리
+        //양방향 입력으로 인한 방향값 (0,0) 에 대한 예외처리 나중에 다시 손볼 것
         //if(characterManager.Character.Move_Direction.x==0 && characterManager.Character.Move_Direction.y == 0)
         //{
         //    characterManager.Character.IsIdle = true;

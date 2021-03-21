@@ -36,7 +36,7 @@ public class Effect : MonoBehaviour
     {
 
         weaponRef = transform.parent.GetComponent<Weapon>();
-        characterRef = transform.parent.transform.parent.transform.parent.transform.parent.transform.parent.transform.parent.transform.parent.GetComponent<Character>();
+        characterRef = transform.parent.transform.parent.transform.parent.transform.parent.transform.parent.transform.parent.GetComponent<Character>();
         if(characterRef==null)
         Debug.Log("stop");
     }
